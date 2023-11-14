@@ -1,0 +1,18 @@
+{
+  "name": "genshin_but_express",
+  "version": "1.0.0",
+  "description": "This is a BED-CA1 assignment repo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "godlykira",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.3",
+    "nodemon": "^3.0.1"
+  }
+}
