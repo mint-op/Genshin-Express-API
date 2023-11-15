@@ -33,6 +33,15 @@ INSERT INTO task (title, description, points) VALUES
 ("Energy Conservation", "Turn off lights and appliances when not in use.", 25),
 ("Composting", "Start composting kitchen scraps to create natural fertilizer.", 35);
 
+CREATE TABLE userData (
+    user_id INT PRIMARY KEY,
+    name TEXT NOT NULL,
+    gamelvl INT NOT NULL DEAFULT 1,
+    primogems INT NOT NULL DEAFULT 0,
+    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    active BOOLEAN DEFAULT FALSE
+)
+
 `;
 pool.query(sqlstatement, (error, results, fields) => {
   if (error) console.error('Error creating tables: ', error);
