@@ -17,11 +17,7 @@ module.exports.createNewUsers = (req, res, next) => {
       model.insertSingle(req.body, (error, results, fields) => {
         if (error) console.error('Error createUsers', error);
         else {
-          req.params = {
-            id: results.insertId,
-            status: 201,
-          };
-          next();
+          res.status(201).json({ user_id: results.insertId, username: username, email: email });
         }
       });
     }
@@ -45,13 +41,7 @@ module.exports.readUserById = (req, res) => {
         res.status(404).json({ message: 'User not found' });
         return;
       } else {
-        if (req.params.status != undefined)
-          res.status(req.params.status).json(
-            results.map((m) => {
-              m.user_id, m.username, m.email;
-            })
-          );
-        else res.status(200).json(results[0]);
+        res.status(200).json(results[0]);
       }
     }
   });
@@ -67,6 +57,11 @@ module.exports.updateUserById = (req, res, next) => {
   model.selectAll((error, results, fields) => {
     if (error) console.error('Error readAllUsers', error);
     else {
+      const checkid = results.find((f) => f.user_id == id);
+      if (!checkid) {
+        res.status(404).json({ message: 'User not found' });
+        return;
+      }
       const sameData = results.filter((r) => r.username == username || r.email == email);
       let sameId = false;
       if (sameData.length != 0)
@@ -87,11 +82,7 @@ module.exports.updateUserById = (req, res, next) => {
         if (error) console.error('Error updateUserById', error);
         else {
           console.log(results);
-          req.params = {
-            id: id,
-            status: 200,
-          };
-          next();
+          res.status(200).json({ user_id: id, username: username, email: email });
         }
       });
     }
@@ -104,7 +95,7 @@ module.exports.deleteUserById = (req, res, next) => {
   model.deleteById(id, (error, results, fields) => {
     if (error) console.error('Error deleteUserById', error);
     else {
-      if (results.affectedRows == 0) res.status(404).json({ message: 'User not found' });
+      if (results[0].affectedRows == 0) res.status(404).json({ message: 'User not found' });
       else res.status(204).send();
     }
   });
