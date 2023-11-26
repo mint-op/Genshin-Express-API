@@ -39,7 +39,6 @@ module.exports.readUserById = (req, res) => {
       if (results.length == 0) {
         // Mysql returns an empty array
         res.status(404).json({ message: 'User not found' });
-        return;
       } else {
         res.status(200).json(results[0]);
       }

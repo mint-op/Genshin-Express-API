@@ -12,7 +12,6 @@ module.exports.createNewProgress = (req, res, next) => {
     const tid = results.find((f) => f.task_id == task_id);
     if (!uid || !tid) {
       res.status(404).json({ message: 'userId or taskId not found' });
-      return;
     } else {
       model.insertSingle(req.body, (error, results, fields) => {
         if (error) console.error('Error createProgress', error);
@@ -56,7 +55,7 @@ module.exports.updateProgressNotes = (req, res, next) => {
         res.status(404).json({ message: 'ProgressId not found' });
         return;
       } else {
-        model.updateById_notes(notes, (error, results, fields) => {
+        model.updateById_notes({ progress_id: id, notes: notes }, (error, results, fields) => {
           if (error) console.error('Error updateProgressNotes', error);
           else {
             req.params = {

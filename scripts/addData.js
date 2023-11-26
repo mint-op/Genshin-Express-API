@@ -1,5 +1,5 @@
 const fs = require('fs');
-const model = require('./models');
+const model = require('./dataModels');
 
 const readDirectoryRecursiveWithFilter = async (baseDir, prefix, predicate) => {
   try {
