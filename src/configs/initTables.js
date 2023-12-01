@@ -37,16 +37,16 @@ DROP TABLE IF EXISTS userData;
 DROP TABLE IF EXISTS characters;
 DROP TABLE IF EXISTS user_character;
 DROP TABLE IF EXISTS weapons;
-DROP TABLE IF EXISTS user_weapons;
+DROP TABLE IF EXISTS user_weapon;
 
 CREATE TABLE userData (
     user_id INT PRIMARY KEY,
     name TEXT NOT NULL,
-    gender VARCHAR(10),
     gamelvl INT NOT NULL DEFAULT 1,
     primogems INT NOT NULL DEFAULT 0,
-    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    active BOOLEAN DEFAULT FALSE
+    counter5 INT NOT NULL DEFAULT 1,
+    counter4 INT NOT NULL DEFAULT 1,
+    created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE characters (

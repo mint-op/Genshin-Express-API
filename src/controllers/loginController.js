@@ -3,10 +3,29 @@ const { selectUserById, insertNewUser } = require('../models/gameModel');
 const { selectAllCharacters, selectAllWeapons } = require('../models/gameModel');
 const pool = require('../services/db');
 
-// Note: userId is in res.locals
+const getWeapons = () => {
+  return new Promise((resolve, reject) => {
+    selectAllWeapons((errors, results, fields) => {
+      if (errors) reject('Error selectAllWeapons ', errors);
+      else resolve(results);
+    });
+  });
+};
 
-const newPlayer = (id) => {
-  const maps = {
+const getCharacters = () => {
+  return new Promise((resolve, reject) => {
+    selectAllCharacters((errors, results, fields) => {
+      if (errors) reject('Error getCharacters ', errors);
+      else resolve(results);
+    });
+  });
+};
+
+const newPlayer = async (id) => {
+  const weapons = await getWeapons();
+  const characters = await getCharacters();
+
+  const charMap = {
     name: 'Traveler',
     vision: 'ANEMO',
     weapon: 'Dull Blade',
@@ -16,72 +35,88 @@ const newPlayer = (id) => {
     insertWeap: `INSERT INTO user_weapon (weapon_id, user_id, totalAttack) VALUES (?, ?, ?);`,
   };
 
-  selectAllWeapons((err, results, fields) => {
-    if (err) console.error(err);
-    else {
-      const weapon = results.filter((f) => f.name == maps.weapon);
-      if (weapon.length == 0) console.error('Weapon not found');
+  const callback = (errors, results, fields) => {
+    if (errors) console.error(errors);
+    else console.log(results);
+  };
+
+  var weapon_id, weapon_baseATK;
+
+  const insertWeap = () => {
+    return new Promise((resolve, reject) => {
+      const weapon = weapons.filter((f) => f.name == charMap.weapon);
+      if (weapon.length == 0) reject('Weapon not found');
       else {
-        pool.query(sqlstatements.insertWeap, [weapon[0].weapon_id, id, weapon[0].baseAttack], (err, results, fields) => {
-          if (err) console.error(err);
-          console.log(results);
-        });
-        selectAllCharacters((err, results, fields) => {
-          if (err) console.error(err);
-          else {
-            const character = results.filter((f) => f.name == maps.name && f.vision_key == maps.vision);
-            if (character.length == 0) console.error('Character not found');
-            else {
-              pool.query(sqlstatements.insertChar, [id, character[0].character_id, weapon[0].weapon_id, 1000, 300, 18 + weapon[0].baseAttack, 58], (err, results, fields) => {
-                if (err) console.error(err);
-                console.log(results);
-              });
-            }
-          }
-        });
+        pool.query(sqlstatements.insertWeap, [weapon[0].weapon_id, id, weapon[0].baseAttack], callback);
+        weapon_id = weapon[0].weapon_id;
+        weapon_baseATK = weapon[0].baseAttack;
+        resolve('Weapon added');
       }
-    }
+    });
+  };
+
+  const insertUserChar = () => {
+    return new Promise((resolve, reject) => {
+      const character = characters.filter((f) => f.name == charMap.name && f.vision_key == charMap.vision);
+      if (character.length == 0) reject('Character not found');
+      else {
+        pool.query(sqlstatements.insertChar, [id, character[0].character_id, weapon_id, 1000, 300, 18 + weapon_baseATK, 58], callback);
+        resolve('UserCharacter added');
+      }
+    });
+  };
+
+  const promise = Promise.all([insertWeap(), insertUserChar()]);
+  promise
+    .then((value) => {
+      console.log(value);
+    })
+    .catch((errors) => {
+      console.log(errors);
+    });
+};
+
+const selectAllUser = () => {
+  return new Promise((resolve, reject) => {
+    selectAll((errors, results, fields) => {
+      if (errors) reject('Error selectAllUser ', errors);
+      else resolve(results);
+    });
   });
 };
 
-module.exports.userLogin = (req, res, next) => {
-  const { name, gender, username, email } = req.body;
+module.exports.userLogin = async (req, res, next) => {
+  const users = await selectAllUser();
 
-  selectAll((errors, results, fields) => {
-    if (errors) console.error('Error login', errors);
-    else {
-      // check username and email
-      const user = results.filter((f) => f.username == username && f.email == email);
-      if (user.length == 0) {
-        res.status(404).json({ message: 'Username or Email not matched' });
-      } else {
-        selectUserById(user[0].user_id, (error, results, fields) => {
-          if (error) console.error('Error selectUserById', error);
-          else {
-            if (results.length == 0) {
-              // insert new user
-              const data = {
-                user_id: user[0].user_id,
-                name: name,
-                gender: gender,
-                primogems: 160,
-                active: true,
-              };
-              insertNewUser(data, (error, results, fields) => {
-                if (error) console.error('Error insertNewUser', error);
-                else {
-                  res.locals = { userId: user[0].user_id };
-                  newPlayer(res.locals.userId);
-                  res.status(200).json({ message: `Welcome ${data.name}` });
-                }
-              });
-            } else {
-              res.status(200).json({ message: `Welcome ${results[0].name}` });
-              res.locals = { userId: user[0].user_id };
+  const { name, username, email } = req.body;
+
+  const user = users.filter((f) => (f.username = username && f.email == email));
+
+  if (user.length == 0) res.status(404).json({ message: 'Username or Email not matched' });
+  else {
+    selectUserById(user[0].user_id, (errors, results, fields) => {
+      if (errors) console.error('Error selectUserById ', errors);
+      else {
+        if (results.length == 0) {
+          // insert new user
+          const data = {
+            user_id: user[0].user_id,
+            name: name,
+            primogems: 320,
+          };
+          insertNewUser(data, (error, results, fields) => {
+            if (error) console.error('Error insertNewUser', error);
+            else {
+              module.exports = { userId: user[0].user_id };
+              newPlayer(data.user_id);
+              res.status(200).json({ message: `Welcome ${data.name}`, primogems: `💎${data.primogems}` });
             }
-          }
-        });
+          });
+        } else {
+          res.status(200).json({ message: `Welcome ${results[0].name}`, gamelvl: results[0].gamelvl, primogems: `💎${results[0].primogems}` });
+          module.exports = { userId: user[0].user_id };
+        }
       }
-    }
-  });
+    });
+  }
 };
