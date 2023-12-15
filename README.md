@@ -96,10 +96,10 @@ Spend primogems as virtual currency to get `character(s)`. Each character have d
 
   ```json
   {
-    name: "character name",
-    vision: "character vision",
-    rarity: "character rarity in ⭐"
-    remaining_primogems: "💎<amount>"
+    "name": "character name",
+    "vision": "character vision",
+    "rarity": "character rarity in ⭐"
+    "remaining_primogems": "💎<amount>"
   }
   ```
 
