@@ -2,38 +2,48 @@ const model = require('../models/userModel');
 
 module.exports.createNewUsers = (req, res, next) => {
   const { username, email } = req.body;
+
   if (!username || !email) {
     res.status(400).json({ message: 'Username or Email are required' });
     return;
   }
-  model.selectAll((error, results, fields) => {
+  const callback_all = (error, results, fields) => {
     if (error) console.error('Error readAllUsers', error);
     else {
       const emails = results.find((f) => f.email == email);
+
       if (emails) {
         res.status(409).json({ message: 'Email already exists' });
         return;
       }
-      model.insertSingle(req.body, (error, results, fields) => {
+
+      const callback_insert = (error, results, fields) => {
         if (error) console.error('Error createUsers', error);
         else {
           res.status(201).json({ user_id: results.insertId, username: username, email: email });
         }
-      });
+      };
+
+      model.insertSingle(req.body, callback_insert);
     }
-  });
+  };
+
+  model.selectAll(callback_all);
 };
 
 module.exports.readAllUsers = (req, res, next) => {
-  model.selectAll((error, result, fields) => {
+  const callback = (error, result, fields) => {
     if (error) console.error('Error readAllUsers', error);
     else res.status(200).json(result);
-  });
+  };
+
+  model.selectAll(callback);
 };
 
 module.exports.readUserById = (req, res) => {
   const { id } = req.params;
-  model.selectById(id, (error, results, fields) => {
+
+  const callback = (error, results, fields) => {
     if (error) console.error('Error readUserById', error);
     else {
       if (results.length == 0) {
@@ -43,17 +53,21 @@ module.exports.readUserById = (req, res) => {
         res.status(200).json(results[0]);
       }
     }
-  });
+  };
+
+  model.selectById(id, callback);
 };
 
 module.exports.updateUserById = (req, res, next) => {
   const { id } = req.params;
   const { username, email } = req.body;
+
   if (!username || !email) {
     res.status(400).json({ message: 'Username or Email is required' });
     return;
   }
-  model.selectAll((error, results, fields) => {
+
+  const callback_all = (error, results, fields) => {
     if (error) console.error('Error readAllUsers', error);
     else {
       const checkid = results.find((f) => f.user_id == id);
@@ -69,6 +83,7 @@ module.exports.updateUserById = (req, res, next) => {
           else sameId = true;
         });
       else sameId = true;
+
       if (!sameId) {
         res.status(409).json({ message: 'Email or Username already exists' });
         return;
@@ -77,25 +92,32 @@ module.exports.updateUserById = (req, res, next) => {
         ...req.body,
         id: id,
       };
-      model.updateById(data, (error, results, fields) => {
+
+      const callback_update = (error, results, fields) => {
         if (error) console.error('Error updateUserById', error);
         else {
           console.log(results);
           res.status(200).json({ user_id: id, username: username, email: email });
         }
-      });
+      };
+
+      model.updateById(data, callback_update);
     }
-  });
+  };
+
+  model.selectAll(callback_all);
 };
 
 module.exports.deleteUserById = (req, res, next) => {
   const { id } = req.params;
 
-  model.deleteById(id, (error, results, fields) => {
+  const callback = (error, results, fields) => {
     if (error) console.error('Error deleteUserById', error);
     else {
       if (results[0].affectedRows == 0) res.status(404).json({ message: 'User not found' });
       else res.status(204).send();
     }
-  });
+  };
+
+  model.deleteById(id, callback);
 };
