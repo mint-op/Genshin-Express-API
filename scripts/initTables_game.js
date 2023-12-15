@@ -49,7 +49,7 @@ CREATE TABLE user_character (
     user_character_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
     character_id INT NOT NULL,
-    weapon_id INT NOT NULL,
+    user_weapon_id INT NOT NULL,
     level INT NOT NULL DEFAULT 1,
     health INT NOT NULL,
     energy INT NOT NULL,

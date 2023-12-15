@@ -1,5 +1,9 @@
 const pool = require('../services/db');
 
+// * ===================================================================
+
+// * UserData related sql statements
+
 module.exports.selectAllUser = (callback) => {
   const sqlstatement = `
     SELECT * FROM userdata;
@@ -22,7 +26,7 @@ module.exports.insertNewUser = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
-module.exports.updatePrimogem = (data, callback) => {
+module.exports.updatePrimogems = (data, callback) => {
   const sqlstatement = `
     UPDATE userData SET primogems = ? WHERE user_id = ?;
   `;
@@ -38,11 +42,13 @@ module.exports.updatePityCounter = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
+// * ===================================================================
+
 module.exports.insertNewUserCharacter = (data, callback) => {
   const sqlstatement = `
-    INSERT INTO user_character (user_id, character_id, weapon_id, health, energy, atk, def) VALUES (?, ?, ?, ?, ?, ?, ?);
+    INSERT INTO user_character (user_id, character_id, user_weapon_id, health, energy, atk, def) VALUES (?, ?, ?, ?, ?, ?, ?);
   `;
-  const VALUES = [data.user_id, data.character_id, data.weapon_id, data.health, data.energy, data.atk, data.def];
+  const VALUES = [data.user_id, data.character_id, data.user_weapon_id, data.health, data.energy, data.atk, data.def];
   pool.query(sqlstatement, VALUES, callback);
 };
 
@@ -54,6 +60,22 @@ module.exports.insertNewUserWeapon = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
+module.exports.selectUserCharacterById = (id, callback) => {
+  const sqlstatement = `
+    SELECT * FROM user_character WHERE user_id = ?;
+  `;
+  pool.query(sqlstatement, id, callback);
+};
+
+module.exports.selectUserWeaponById = (id, callback) => {
+  const sqlstatement = `
+    SELECT * FROM user_weapon WHERE user_id = ?;
+  `;
+  pool.query(sqlstatement, id, callback);
+};
+
+// * ===================================================================
+
 module.exports.selectAllCharacters = (callback) => {
   const sqlstatement = `
     SELECT * FROM characters;
@@ -61,9 +83,23 @@ module.exports.selectAllCharacters = (callback) => {
   pool.query(sqlstatement, callback);
 };
 
+module.exports.selectCharacterById = (id, callback) => {
+  const sqlstatement = `
+    SELECT * FROM characters WHERE character_id = ?;
+  `;
+  pool.query(sqlstatement, id, callback);
+};
+
 module.exports.selectAllWeapons = (callback) => {
   const sqlstatement = `
     SELECT * FROM weapons;
   `;
   pool.query(sqlstatement, callback);
+};
+
+module.exports.selectWeaponById = (id, callback) => {
+  const sqlstatement = `
+    SELECT * FROM weapons WHERE weapon_id = ?;
+  `;
+  pool.query(sqlstatement, id, callback);
 };

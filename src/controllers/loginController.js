@@ -1,6 +1,6 @@
 const { selectAll } = require('../models/userModel');
-const { selectUserById, insertNewUser } = require('../models/gameModel');
-const { selectAllCharacters, selectAllWeapons } = require('../models/gameModel');
+const { selectUserById, insertNewUser } = require('../models/PlayerModel');
+const { selectAllCharacters, selectAllWeapons } = require('../models/PlayerModel');
 const pool = require('../services/db');
 
 const getWeapons = () => {
@@ -31,49 +31,40 @@ const newPlayer = async (id) => {
     weapon: 'Dull Blade',
   };
   const sqlstatements = {
-    insertChar: `INSERT INTO user_character (user_id, character_id, weapon_id, health, energy, atk, def) VALUES (?, ?, ?, ?, ?, ?, ?);`,
+    insertChar: `INSERT INTO user_character (user_id, character_id, user_weapon_id, health, energy, atk, def) VALUES (?, ?, ?, ?, ?, ?, ?);`,
     insertWeap: `INSERT INTO user_weapon (weapon_id, user_id, totalAttack) VALUES (?, ?, ?);`,
   };
 
   const callback = (errors, results, fields) => {
     if (errors) console.error(errors);
-    else console.log(results);
   };
 
-  var weapon_id, weapon_baseATK;
+  var weapon_baseATK;
 
-  const insertWeap = () => {
-    return new Promise((resolve, reject) => {
-      const weapon = weapons.filter((f) => f.name == charMap.weapon);
-      if (weapon.length == 0) reject('Weapon not found');
-      else {
-        pool.query(sqlstatements.insertWeap, [weapon[0].weapon_id, id, weapon[0].baseAttack], callback);
-        weapon_id = weapon[0].weapon_id;
-        weapon_baseATK = weapon[0].baseAttack;
-        resolve('Weapon added');
-      }
-    });
-  };
+  const insertWeapon = new Promise((resolve, reject) => {
+    const weapon = weapons.filter((f) => f.name == charMap.weapon);
+    if (weapon.length == 0) console.log('Weapon not found');
+    else {
+      pool.query(sqlstatements.insertWeap, [weapon[0].weapon_id, id, weapon[0].baseAttack], (errors, results, fields) => {
+        if (errors) reject(errors);
+        else {
+          resolve(results);
+          console.log('UserWeapon added');
+        }
+      });
+    }
+  });
 
-  const insertUserChar = () => {
-    return new Promise((resolve, reject) => {
+  insertWeapon
+    .then((result) => {
       const character = characters.filter((f) => f.name == charMap.name && f.vision_key == charMap.vision);
-      if (character.length == 0) reject('Character not found');
+      if (character.length == 0) console.log('Character not found');
       else {
-        pool.query(sqlstatements.insertChar, [id, character[0].character_id, weapon_id, 1000, 300, 18 + weapon_baseATK, 58], callback);
-        resolve('UserCharacter added');
+        pool.query(sqlstatements.insertChar, [id, character[0].character_id, result.insertId, 1000, 300, 18, 58], callback);
+        console.log('UserCharacter added');
       }
-    });
-  };
-
-  const promise = Promise.all([insertWeap(), insertUserChar()]);
-  promise
-    .then((value) => {
-      console.log(value);
     })
-    .catch((errors) => {
-      console.log(errors);
-    });
+    .catch((error) => console.error(error));
 };
 
 const selectAllUser = () => {
@@ -98,7 +89,7 @@ module.exports.userLogin = async (req, res, next) => {
       if (errors) console.error('Error selectUserById ', errors);
       else {
         if (results.length == 0) {
-          // insert new user
+          // * insert new user
           const data = {
             user_id: user[0].user_id,
             name: name,

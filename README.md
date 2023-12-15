@@ -1,174 +1,108 @@
-# API Documentation
+# Geshin Impact Express
 
-## Table of Contents
+This is Section B `Fantasy Adventures` Theme game.
 
-- [API Documentation](#api-documentation)
-  - [Table of Contents](#table-of-contents)
-  - [Geting Started](#geting-started)
-  - [Endpoints for Section A](#endpoints-for-section-a)
-    - [1. Get Task Details](#1-get-task-details)
-    - [2. Update Task](#2-update-task)
-    - [3. Delete Task](#3-delete-task)
-    - [4. Create Task Progress](#4-create-task-progress)
-    - [5. Get Progress Details](#5-get-progress-details)
-    - [6. Update Progress](#6-update-progress)
-    - [7. Delete Progress](#7-delete-progress)
-  - [Endpoints for Section B](#endpoints-for-section-b)
+- [Geshin Impact Express](#geshin-impact-express)
+  - [Setup](#setup)
+  - [Database Initialization \& Add Data](#database-initialization--add-data)
+  - [Endpoints](#endpoints)
+    - [Login / Signup](#login--signup)
+    - [Gacha](#gacha)
 
-## Geting Started
+## Setup
 
-First install the required modules
+To set up environment variables for your Express.js application, follow these steps:
 
-```
-npm install express
-npm install mysql2
-npm install dotenv
-npm install nodemon
-```
+1. Create a file named `.env` in the root directory of your project.
+2. Open the `.env` file and add the following lines:
 
-then create `.env` file in the root dir with the following content
+   ```
+   DB_HOST=<your_database_host>
+   DB_USER=<your_database_user>
+   DB_PASSWORD=<your_database_password>
+   DB_DATABASE=<your_database_name>
+   ```
 
-```
-DB_HOST="your host"
-DB_USER="your database username"
-DB_PASSWORD="your database password"
-DB_DATABASE="your database name"
-```
+   Replace `<your_database_host>`, `<your_database_user>`, `<your_database_password>`, and `<your_database_name>` with the appropriate values for your database connection.
+   For example:
 
-## Endpoints for Section A
+   ```
+   DB_HOST=localhost
+   DB_USER=myuser
+   DB_PASSWORD=mypassword
+   DB_DATABASE=ca1bed
+   ```
 
-### 1. Get Task Details
+   Note: Make sure there are no spaces around the equal sign (=) in each line.
 
-<details>
-    
-   - **Endpoint**: `GET /tasks/{task_id}`
-   - **Response:**
-```
-{
-    "task_id": 1,
-    "title": "Plant a Tree",
-    "description": "Plant a tree...",
-    "points": 50
-}
-```
-  - **Status Code**: 200 OK
-  - **Error Handling**: 404 Not Found if `task_id` doesn't exist.
-</details>
+3. Save the `.env` file.
 
-### 2. Update Task
+## Database Initialization & Add Data
 
-<details>
-    
-   - **Endpoint**: `PUT /tasks/{task_id}`
-   - **Request Body:**
-```
-{
-    "title": "Plant Two Trees", 
-    "description": "Plant two trees...", 
-    "points": 60
-}
-```
-  - **Response**:
-```
-{
-    "task_id": 1, 
-    "title": "Plant Two Trees", 
-    "description": "Plant two trees...", 
-    "points": 60
-}
-```
-  - **Status Code**: 200 OK
-  - **Error Handling**: 404 Not Found if `task_id` doesn't exist. 400 Bad Request if body is incomplete.
-</details>
+1. To initialize the database tables and populate them with sample data, open the terminal in VSCode and run the following command:
 
-### 3. Delete Task
+   ```
+   npm run init_tables
+   cd .\scripts\
+   node .\addData.js
+   ```
 
-<details>
+## Endpoints
 
-- **Endpoint**: `DELETE /tasks/{task_id}`
-- **Status Code**: 204 No Content
-- **Error Handling**: 404 Not Found if `task_id` doesn't exist.
-</details>
+### Login / Signup
 
-### 4. Create Task Progress
+- **Endpoint** : `POST > game/login`
+- **Request** :
 
-<details>
-    
-   - **Endpoint**: `POST /task_progress`
-   - **Request Body:**
-```
-{
-    "user_id": 1, 
-    "task_id": 1, 
-    "completion_date": "2023-07-30", 
-    "notes": "Planted a tree."
-}
-```
-  - **Response**:
-```
-{
-    "progress_id": 1, 
-    "user_id": 1, 
-    "task_id": 1, 
-    "completion_date": "2023-07-30", 
-    "notes": "Planted a tree."
-}
-```
-  - **Status Code**: 201 Created
-  - **Error Handling**: 404 Not Found if `user_id` or `task_id` doesn't exist. 400 Bad Request if completion_date is missing.
-</details>
+  ```json
+  {
+    "name": "<your_game_name>",
+    "username": "<from_users_table>",
+    "email": "<from_users_table>"
+  }
+  ```
 
-### 5. Get Progress Details
+- Response New Player :
+  ```json
+  {
+    "message": "Welcome <your_game_name>",
+    "primogems": "💎<amount>"
+  }
+  ```
+- Response Old Player :
+  ```json
+  {
+    "message": "Welcome <your_game_name>",
+    "level": "<Player_level>",
+    "primogems": "💎<amount>"
+  }
+  ```
 
-<details>
-    
-   - **Endpoint**: `GET /task_progress/{progress_id}`
-   - **Response:**
-```
-{
-    "progress_id": 1, 
-    "user_id": 1, 
-    "task_id": 1, 
-    "completion_date": "2023-07-30", 
-    "notes": "Planted a tree."
-}
-```
-  - **Status Code**: 200 OK
-  - **Error Handling**: 404 Not Found if `progress_id` doesn't exist.
-</details>
+### Gacha
 
-### 6. Update Progress
+Spend primogems as virtual currency to get `character(s)`. Each character have different types of rarity. Only `5star` & `4star` can be obtained through `gacha`. `Weapons` can be obtained through `quests`.
 
-<details>
-    
-   - **Endpoint**: `PUT /task_progress/{progress_id}`
-   - **Request Body:**
-```
-{
-    "notes": "Planted two trees this time!"
-}
-```
-  - **Response**:
-```
-{
-    "progress_id": 1, 
-    "user_id": 1, 
-    "task_id": 1, 
-    "completion_date": "2023-07-30", 
-    "notes": "Planted two trees!"
-}
-```
-  - **Status Code**: 200 OK
-  - **Error Handling**: 404 Not Found if `progress_id` doesn't exist. 400 Bad Request if `notes` is missing.
-</details>
+| Rarity     | Drop Rate | Pity |
+| ---------- | --------- | ---- |
+| ⭐⭐⭐⭐⭐ | 0.006     | 73   |
+| ⭐⭐⭐⭐   | 0.051     | 8    |
 
-### 7. Delete Progress
+> Note: ⭐⭐⭐ will always drop rarity 3 weapons
 
-<details>
+**For Single Pull**
 
-- **Endpoint**: `DELETE /task_progress/{progress_id}`
-- **Status Code**: 204 No Content
-- **Error Handling**: 404 Not Found if `progress_id` doesn't exist.
-</details>
+- **Endpoint** : `GET > game/gacha`
+- **Response** :
 
-## Endpoints for Section B
+  ```json
+  {
+    name: "character name",
+    vision: "character vision",
+    rarity: "character rarity in ⭐"
+    remaining_primogems: "💎<amount>"
+  }
+  ```
+
+**For 10 Pulls**
+
+- **Endpoint** : `GET > game/gacha_multi`
