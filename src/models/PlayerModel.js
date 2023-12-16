@@ -46,9 +46,9 @@ module.exports.updatePityCounter = (data, callback) => {
 
 module.exports.insertNewUserCharacter = (data, callback) => {
   const sqlstatement = `
-    INSERT INTO user_character (user_id, character_id, user_weapon_id, health, energy, atk, def) VALUES (?, ?, ?, ?, ?, ?, ?);
+    INSERT INTO user_character (user_id, character_id, user_weapon_id, health, atk, def, NORMAL_ATTACK, ELEMENTAL_SKILL, ELEMENTAL_BURST) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
   `;
-  const VALUES = [data.user_id, data.character_id, data.user_weapon_id, data.health, data.energy, data.atk, data.def];
+  const VALUES = [data.user_id, data.character_id, data.user_weapon_id, data.health, data.atk, data.def, data.NORMAL_ATTACK, data.ELEMENTAL_SKILL, data.ELEMENTAL_BURST];
   pool.query(sqlstatement, VALUES, callback);
 };
 

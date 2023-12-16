@@ -38,6 +38,7 @@ DROP TABLE IF EXISTS characters;
 DROP TABLE IF EXISTS user_character;
 DROP TABLE IF EXISTS weapons;
 DROP TABLE IF EXISTS user_weapon;
+DROP TABLE IF EXISTS entities;
 
 CREATE TABLE userData (
     user_id INT PRIMARY KEY,
@@ -62,7 +63,10 @@ CREATE TABLE characters (
     release_date DATE,
     constellation VARCHAR(50),
     birthday VARCHAR(10),
-    description TEXT
+    description TEXT,
+    NORMAL_ATTACK JSON NOT NULL,
+    ELEMENTAL_SKILL JSON NOT NULL,
+    ELEMENTAL_BURST JSON NOT NULL
 );
 
 CREATE TABLE user_character (
@@ -71,11 +75,13 @@ CREATE TABLE user_character (
     character_id INT NOT NULL,
     user_weapon_id INT NOT NULL,
     level INT NOT NULL DEFAULT 1,
-    health INT NOT NULL,
-    energy INT NOT NULL,
-    atk INT NOT NULL,
-    def INT NOT NULL,
-    experience INT NOT NULL DEFAULT 0
+    health FLOAT NOT NULL,
+    atk FLOAT NOT NULL,
+    def FLOAT NOT NULL,
+    experience INT NOT NULL DEFAULT 0,
+    NORMAL_ATTACK JSON NOT NULL,
+    ELEMENTAL_SKILL JSON NOT NULL,
+    ELEMENTAL_BURST JSON NOT NULL
 );
 
 CREATE TABLE weapons (
@@ -93,11 +99,25 @@ CREATE TABLE user_weapon (
     weapon_id INT NOT NULL,
     level INT NOT NULL DEFAULT 1,
     totalAttack INT NOT NULL
-)
+);
+
+CREATE TABLE entities (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    creature_id VARCHAR(50),
+    name VARCHAR(50) NOT NULL,
+    description TEXT,
+    region VARCHAR(50),
+    type VARCHAR(50),
+    family VARCHAR(50),
+    faction VARCHAR(50),
+    elements JSON NOT NULL,
+    descriptions JSON,
+    elemental_descriptions JSON
+);
 
 `;
 pool.query(sqlstatement, (error, results, fields) => {
   if (error) console.error('Error creating tables: ', error);
-  else console.log('Table successfully created: ', results);
+  else console.log('Table successfully created!');
   process.exit();
 });

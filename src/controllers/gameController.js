@@ -95,23 +95,31 @@ module.exports.gachaMulti = async (req, res, next) => {
 
 module.exports.insertGachaResult = (req, res, next) => {
   const { userData, results } = res.locals.result;
+  const { readJSON } = require('../assets/queryDist');
 
   var charObj = {
     user_id: userData.user_id,
-    health: 1000,
-    energy: 300,
-    def: 58,
   };
 
   results.forEach((item) => {
     var weapObj = {
-      atk: 18,
       weapon_id: item.weapon_id,
       totalAttack: item.baseAttack,
     };
 
     const isChar = item.character_id != undefined;
     if (isChar) {
+      const charData = readJSON('character-values.json').find((f) => f.Character == item.name);
+
+      charObj = {
+        ...charObj,
+        health: parseFloat(charData.HP),
+        atk: parseFloat(charData.ATK),
+        def: parseFloat(charData.DEF),
+        NORMAL_ATTACK: JSON.stringify(item.NORMAL_ATTACK),
+        ELEMENTAL_SKILL: JSON.stringify(item.ELEMENTAL_SKILL),
+        ELEMENTAL_BURST: JSON.stringify(item.ELEMENTAL_BURST),
+      };
       weapObj = { character_id: item.character_id, ...weapObj };
 
       const callback_weap = (errors, results, fields) => {

@@ -3,13 +3,13 @@
   "name": "Fatui Cicin Mage",
   "description": "A Fatui mage who can command Cicins in battle. Similarly to the way that Cicins go crazy for Mist Grass, Cicin Mages take great pleasure in toying with their prey. They seem to wander the land aimlessly, as if compelled by some unknown duty.",
   "region": "Global",
-
   "type": "Elite Enemies",
   "family": "Fatui",
   "faction": "Fatui",
-
-  "element": ["Cryo", "Electro"],
-
+  "elements": [
+    "Cryo",
+    "Electro"
+  ],
   "drops": [
     {
       "name": "Mist Grass Pollen",
@@ -42,7 +42,6 @@
       "minimum-level": 60
     }
   ],
-
   "elemental-descriptions": [
     {
       "element": "Cryo",
@@ -53,6 +52,5 @@
       "description": "A Fatui mage who can command Electro Cicins in battle. Their origins and what they look like under that mask are both mysteries. Similarly to the way that Electro Cicins go crazy for Mist Grass, Cicin Mages take great pleasure in toying with their prey."
     }
   ],
-
   "mora-gained": 200
 }
