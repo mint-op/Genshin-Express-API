@@ -1,6 +1,7 @@
 const { selectAll } = require('../models/userModel');
 const { selectUserById, insertNewUser } = require('../models/PlayerModel');
 const { selectAllCharacters, selectAllWeapons } = require('../models/PlayerModel');
+const { readJSON } = require('../assets/queryDist');
 const pool = require('../services/db');
 
 const getWeapons = () => {
@@ -31,7 +32,7 @@ const newPlayer = async (id) => {
     weapon: 'Dull Blade',
   };
   const sqlstatements = {
-    insertChar: `INSERT INTO user_character (user_id, character_id, user_weapon_id, health, energy, atk, def) VALUES (?, ?, ?, ?, ?, ?, ?);`,
+    insertChar: `INSERT INTO user_character (user_id, character_id, user_weapon_id, health, atk, def, NORMAL_ATTACK, ELEMENTAL_SKILL, ELEMENTAL_BURST) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);`,
     insertWeap: `INSERT INTO user_weapon (weapon_id, user_id, totalAttack) VALUES (?, ?, ?);`,
   };
 
@@ -60,7 +61,22 @@ const newPlayer = async (id) => {
       const character = characters.filter((f) => f.name == charMap.name && f.vision_key == charMap.vision);
       if (character.length == 0) console.log('Character not found');
       else {
-        pool.query(sqlstatements.insertChar, [id, character[0].character_id, result.insertId, 1000, 300, 18, 58], callback);
+        const charData = readJSON('character-values.json').find((f) => f.Character == charMap.name);
+        pool.query(
+          sqlstatements.insertChar,
+          [
+            id,
+            character[0].character_id,
+            result.insertId,
+            parseFloat(charData.HP),
+            parseFloat(charData.ATK),
+            parseFloat(charData.DEF),
+            JSON.stringify(character[0].NORMAL_ATTACK),
+            JSON.stringify(character[0].ELEMENTAL_SKILL),
+            JSON.stringify(character[0].ELEMENTAL_BURST),
+          ],
+          callback
+        );
         console.log('UserCharacter added');
       }
     })
