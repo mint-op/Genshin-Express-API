@@ -49,6 +49,14 @@ const insertSingleEntity = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
+const insertSingleQuest = (data, callback) => {
+  const sqlstatement = `
+    INSERT INTO quests (title, description, experience_reward, weapon_reward_rarity, required_level) VALUES (?, ?, ?, ?, ?);
+  `;
+  const VALUES = [data.title, data.description, data.experience_reward, data.weapon_reward_rarity, data.required_level];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
 const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
   try {
     const parsedDataArray = []; // Array to store parsed data
@@ -150,6 +158,42 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
     console.error(error);
   }
 };
+
+const readFile = async (prefix) => {
+  const questData = await require('./queryDist').readJSON(prefix);
+
+  const insertData = (temp, insertFunction) => {
+    return new Promise((resolve, reject) => {
+      insertFunction(temp, (errors, results, fields) => {
+        if (errors) {
+          console.error(`Error inserting data for file`, errors);
+          reject(errors);
+        } else {
+          // console.log(results);   // * For debuging
+          resolve(results);
+        }
+      });
+    });
+  };
+
+  const insertQuest = async (data) => {
+    const temp = {
+      title: data.title,
+      description: data.description,
+      experience_reward: data.experience_reward,
+      weapon_reward_rarity: data.weapon_reward_rarity,
+      primogems_reward: data.primogems_reward,
+      required_level: data.required_level,
+    };
+
+    await insertData(temp, insertSingleQuest);
+  };
+
+  if (prefix === 'quests.json') {
+    await Promise.all(questData.map(insertQuest));
+  }
+};
+
 // ... existing code ...
 
 // * The __dirname variable provides the directory name of the current module (i.e., the directory of the script)
@@ -157,6 +201,7 @@ Promise.all([
   readDirectoryRecursiveWithFilter('', path.join(__dirname, 'data/characters')),
   readDirectoryRecursiveWithFilter('', path.join(__dirname, 'data/weapons')),
   readDirectoryRecursiveWithFilter('', path.join(__dirname, 'data/enemies')),
+  readFile('quests.json'),
 ])
   .then(() => {
     startCountdown(5);

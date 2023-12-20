@@ -1,8 +1,8 @@
 const pool = require('../services/db');
 
-// * ===================================================================
+// ===================================================================
 
-// * UserData related sql statements
+// UserData Model
 
 module.exports.selectAllUser = (callback) => {
   const sqlstatement = `
@@ -11,11 +11,11 @@ module.exports.selectAllUser = (callback) => {
   pool.query(sqlstatement, callback);
 };
 
-module.exports.selectUserById = (id, callback) => {
+module.exports.selectUserById = (user_id, callback) => {
   const sqlstatement = `
     SELECT * FROM userdata WHERE user_id = ?;
     `;
-  pool.query(sqlstatement, id, callback);
+  pool.query(sqlstatement, user_id, callback);
 };
 
 module.exports.insertNewUser = (data, callback) => {
@@ -42,13 +42,15 @@ module.exports.updatePityCounter = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
-// * ===================================================================
+// ===================================================================
+
+// UserCharacter Model & UserWeapon Model
 
 module.exports.insertNewUserCharacter = (data, callback) => {
   const sqlstatement = `
-    INSERT INTO user_character (user_id, character_id, user_weapon_id, health, atk, def, NORMAL_ATTACK, ELEMENTAL_SKILL, ELEMENTAL_BURST) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
+    INSERT INTO user_character (user_id, character_id, user_weapon_id, health, atk, def) VALUES (?, ?, ?, ?, ?, ?);
   `;
-  const VALUES = [data.user_id, data.character_id, data.user_weapon_id, data.health, data.atk, data.def, data.NORMAL_ATTACK, data.ELEMENTAL_SKILL, data.ELEMENTAL_BURST];
+  const VALUES = [data.user_id, data.character_id, data.user_weapon_id, data.health, data.atk, data.def];
   pool.query(sqlstatement, VALUES, callback);
 };
 
@@ -60,21 +62,42 @@ module.exports.insertNewUserWeapon = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
-module.exports.selectUserCharacterById = (id, callback) => {
+module.exports.selectUserCharacterById = (user_id, callback) => {
   const sqlstatement = `
     SELECT * FROM user_character WHERE user_id = ?;
   `;
-  pool.query(sqlstatement, id, callback);
+  pool.query(sqlstatement, user_id, callback);
 };
 
-module.exports.selectUserWeaponById = (id, callback) => {
+module.exports.selectUserWeaponById = (user_id, callback) => {
   const sqlstatement = `
     SELECT * FROM user_weapon WHERE user_id = ?;
   `;
-  pool.query(sqlstatement, id, callback);
+  pool.query(sqlstatement, user_id, callback);
 };
 
-// * ===================================================================
+// This will return the user's characters and weapons joined together
+module.exports.selectUserDataById = (data, callback) => {
+  const sqlstatement = `
+    SELECT * FROM user_character INNER JOIN user_weapon ON 
+    user_character.user_weapon_id = user_weapon.user_weapon_id 
+    WHERE user_character.user_character_id = ? and user_character.user_id = ?;
+  `;
+  const VALUES = [data.user_character_id, data.user_id];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+module.exports.updateUserCharWeap = (data, callback) => {
+  const sqlstatement = `
+    UPDATE user_character SET user_weapon_id = ? WHERE user_character_id = ?;
+  `;
+  const VALUES = [data.user_weapon_id, data.user_character_id];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+// ===================================================================
+
+// Character & Weapon Model
 
 module.exports.selectAllCharacters = (callback) => {
   const sqlstatement = `
@@ -83,11 +106,11 @@ module.exports.selectAllCharacters = (callback) => {
   pool.query(sqlstatement, callback);
 };
 
-module.exports.selectCharacterById = (id, callback) => {
+module.exports.selectCharacterById = (character_id, callback) => {
   const sqlstatement = `
     SELECT * FROM characters WHERE character_id = ?;
   `;
-  pool.query(sqlstatement, id, callback);
+  pool.query(sqlstatement, character_id, callback);
 };
 
 module.exports.selectAllWeapons = (callback) => {
@@ -97,9 +120,27 @@ module.exports.selectAllWeapons = (callback) => {
   pool.query(sqlstatement, callback);
 };
 
-module.exports.selectWeaponById = (id, callback) => {
+module.exports.selectWeaponById = (weapon_id, callback) => {
   const sqlstatement = `
     SELECT * FROM weapons WHERE weapon_id = ?;
   `;
-  pool.query(sqlstatement, id, callback);
+  pool.query(sqlstatement, weapon_id, callback);
+};
+
+// * ===================================================================
+
+module.exports.selectAllQuests = (callback) => {
+  const sqlstatement = `
+    SELECT * FROM quests;
+  `;
+  pool.query(sqlstatement, callback);
+};
+
+// * Query quests that are not completed by user
+module.exports.selectUserQuest = (data, callback) => {
+  const sqlstatement = `
+    SELECT * FROM user_quest WHERE user_id = ? AND progress = ?;
+  `;
+  const VALUES = [data.user_id, data.progress];
+  pool.query(sqlstatement, VALUES, callback);
 };

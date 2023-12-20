@@ -10,15 +10,21 @@ router.post('/login', login.userLogin);
 router.get('/gacha', controller.gachaSingle, controller.insertGachaResult, controller.ShowGachaResult);
 router.get('/gacha_multi', controller.gachaMulti, controller.insertGachaResult, controller.ShowGachaResult);
 
-// * Output all items in inventory
+// * Inventory Route
 router.get('/inventory', controller.inventoryAll);
-// * Output all owned Characters
 router.get('/inventory/characters', controller.inventoryChars);
-// * Output only selected Character Details (name, stats, weapon name etc..)
-router.get('/inventory/characters/:id', controller.inventoryChar);
-// * Output all owned Weapons
+router.get('/inventory/characters/:uchar_id', controller.inventoryChar);
 router.get('/inventory/weapons', controller.inventoryWeaps);
-// * Output only selected Weapon Details
-router.get('/inventory/weapons/:id', controller.inventoryWeap);
+router.get('/inventory/weapons/:uweap_id', controller.inventoryWeap);
+
+// Quest Route
+router.get('/quests', controller.showAllQuests);
+// router.get('/quests/accept/:quest_id', controller.AcceptQuest);
+
+// Preparation (Party Creation)
+router.get('/party', controller.showPartyMembers);
+router.get('/party/add/:uchar_id', controller.addCharacterToParty);
+router.get('/party/remove/:uchar_id', controller.removeCharacterFromParty);
+router.get('/party/replace/:uchar_id/:uweap_id', controller.updateWeaponForParty);
 
 module.exports = router;

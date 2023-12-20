@@ -116,9 +116,6 @@ module.exports.insertGachaResult = (req, res, next) => {
         health: parseFloat(charData.HP),
         atk: parseFloat(charData.ATK),
         def: parseFloat(charData.DEF),
-        NORMAL_ATTACK: JSON.stringify(item.NORMAL_ATTACK),
-        ELEMENTAL_SKILL: JSON.stringify(item.ELEMENTAL_SKILL),
-        ELEMENTAL_BURST: JSON.stringify(item.ELEMENTAL_BURST),
       };
       weapObj = { character_id: item.character_id, ...weapObj };
 
@@ -205,7 +202,7 @@ module.exports.inventoryChars = async (req, res, next) => {
 
 module.exports.inventoryChar = async (req, res, next) => {
   const { userId } = require('./loginController');
-  const { id } = req.params;
+  const { uchar_id } = req.params;
 
   if (!userId) {
     res.status(404).json({ message: 'Login Required!' });
@@ -219,7 +216,7 @@ module.exports.inventoryChar = async (req, res, next) => {
 
     const userData = await getUserData;
 
-    const result = await (await require('../utils/inventory').inventoryChar(userData[0].user_id)).charById(id);
+    const result = await (await require('../utils/inventory').inventoryChar(userData[0].user_id)).charById(uchar_id);
 
     if (result != 0) res.status(200).json(result);
     else res.status(404).json({ message: 'Character Id does not belong to this user!' });
@@ -249,7 +246,7 @@ module.exports.inventoryWeaps = async (req, res, next) => {
 
 module.exports.inventoryWeap = async (req, res, next) => {
   const { userId } = require('./loginController');
-  const { id } = req.params;
+  const { uweap_id } = req.params;
 
   if (!userId) {
     res.status(404).json({ message: 'Login Required!' });
@@ -263,9 +260,111 @@ module.exports.inventoryWeap = async (req, res, next) => {
 
     const userData = await getUserData;
 
-    const result = await (await require('../utils/inventory').inventoryWeap(userData[0].user_id)).weapById(id);
+    const result = await (await require('../utils/inventory').inventoryWeap(userData[0].user_id)).weapById(uweap_id);
 
     if (result != 0) res.status(200).json(result);
     else res.status(404).json({ message: 'Weapon Id does not belong to this user!' });
+  }
+};
+
+module.exports.showPartyMembers = (req, res, next) => {
+  const { userId } = require('./loginController');
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const { party } = require('../utils/party');
+
+    if (party.length == 0) res.status(404).json({ message: 'Please add a character to the party' });
+    else res.status(200).json(party);
+  }
+};
+
+module.exports.addCharacterToParty = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { uchar_id } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const uchar_Arr = await (await require('../utils/party').createParty(userData[0].user_id)).addChar(uchar_id);
+
+    res.status(200).json(uchar_Arr);
+  }
+};
+
+module.exports.removeCharacterFromParty = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { uchar_id } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const uchar_Arr = (await require('../utils/party').createParty(userData[0].user_id)).removeChar(uchar_id);
+
+    res.status(200).json(uchar_Arr);
+  }
+};
+
+module.exports.updateWeaponForParty = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { uchar_id, uweap_id } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const uchar_Arr = await (await require('../utils/party').createParty(userData[0].user_id)).changeWeap(uchar_id, uweap_id);
+
+    res.status(200).json(uchar_Arr);
+  }
+};
+
+module.exports.showAllQuests = async (req, res, next) => {
+  const { userId } = require('./loginController');
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      const callback = (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      };
+
+      model.selectUserById(userId, callback);
+    });
+
+    const userData = await getUserData;
+
+    const results = (await require('../utils/quests').ShowAllQuests(userData[0].user_id)).allQuests();
+
+    res.status(200).json(results);
   }
 };

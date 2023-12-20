@@ -1,0 +1,452 @@
+[
+    {
+        "Level": "1",
+        "To Next": "1,000",
+        "Total EXP": "0"
+    },
+    {
+        "Level": "2",
+        "To Next": "1,325",
+        "Total EXP": "1,000"
+    },
+    {
+        "Level": "3",
+        "To Next": "1,700",
+        "Total EXP": "2,325"
+    },
+    {
+        "Level": "4",
+        "To Next": "2,150",
+        "Total EXP": "4,025"
+    },
+    {
+        "Level": "5",
+        "To Next": "2,625",
+        "Total EXP": "6,175"
+    },
+    {
+        "Level": "6",
+        "To Next": "3,150",
+        "Total EXP": "8,800"
+    },
+    {
+        "Level": "7",
+        "To Next": "3,725",
+        "Total EXP": "11,950"
+    },
+    {
+        "Level": "8",
+        "To Next": "4,350",
+        "Total EXP": "15,675"
+    },
+    {
+        "Level": "9",
+        "To Next": "5,000",
+        "Total EXP": "20,025"
+    },
+    {
+        "Level": "10",
+        "To Next": "5,700",
+        "Total EXP": "25,025"
+    },
+    {
+        "Level": "11",
+        "To Next": "6,450",
+        "Total EXP": "30,725"
+    },
+    {
+        "Level": "12",
+        "To Next": "7,225",
+        "Total EXP": "37,175"
+    },
+    {
+        "Level": "13",
+        "To Next": "8,050",
+        "Total EXP": "44,400"
+    },
+    {
+        "Level": "14",
+        "To Next": "8,925",
+        "Total EXP": "52,450"
+    },
+    {
+        "Level": "15",
+        "To Next": "9,825",
+        "Total EXP": "61,375"
+    },
+    {
+        "Level": "16",
+        "To Next": "10,750",
+        "Total EXP": "71,200"
+    },
+    {
+        "Level": "17",
+        "To Next": "11,725",
+        "Total EXP": "81,950"
+    },
+    {
+        "Level": "18",
+        "To Next": "12,725",
+        "Total EXP": "93,675"
+    },
+    {
+        "Level": "19",
+        "To Next": "13,775",
+        "Total EXP": "106,400"
+    },
+    {
+        "Level": "20",
+        "To Next": "14,875",
+        "Total EXP": "120,175"
+    },
+    {
+        "Level": "21",
+        "To Next": "16,800",
+        "Total EXP": "135,050"
+    },
+    {
+        "Level": "22",
+        "To Next": "18,000",
+        "Total EXP": "151,850"
+    },
+    {
+        "Level": "23",
+        "To Next": "19,250",
+        "Total EXP": "169,850"
+    },
+    {
+        "Level": "24",
+        "To Next": "20,550",
+        "Total EXP": "189,100"
+    },
+    {
+        "Level": "25",
+        "To Next": "21,875",
+        "Total EXP": "209,650"
+    },
+    {
+        "Level": "26",
+        "To Next": "23,250",
+        "Total EXP": "231,525"
+    },
+    {
+        "Level": "27",
+        "To Next": "24,650",
+        "Total EXP": "254,775"
+    },
+    {
+        "Level": "28",
+        "To Next": "26,100",
+        "Total EXP": "279,425"
+    },
+    {
+        "Level": "29",
+        "To Next": "27,575",
+        "Total EXP": "305,525"
+    },
+    {
+        "Level": "30",
+        "To Next": "29,100",
+        "Total EXP": "333,100"
+    },
+    {
+        "Level": "31",
+        "To Next": "30,650",
+        "Total EXP": "362,200"
+    },
+    {
+        "Level": "32",
+        "To Next": "32,250",
+        "Total EXP": "392,850"
+    },
+    {
+        "Level": "33",
+        "To Next": "33,875",
+        "Total EXP": "425,100"
+    },
+    {
+        "Level": "34",
+        "To Next": "35,550",
+        "Total EXP": "458,975"
+    },
+    {
+        "Level": "35",
+        "To Next": "37,250",
+        "Total EXP": "494,525"
+    },
+    {
+        "Level": "36",
+        "To Next": "38,975",
+        "Total EXP": "531,775"
+    },
+    {
+        "Level": "37",
+        "To Next": "40,750",
+        "Total EXP": "570,750"
+    },
+    {
+        "Level": "38",
+        "To Next": "42,575",
+        "Total EXP": "611,500"
+    },
+    {
+        "Level": "39",
+        "To Next": "44,425",
+        "Total EXP": "654,075"
+    },
+    {
+        "Level": "40",
+        "To Next": "46,300",
+        "Total EXP": "698,500"
+    },
+    {
+        "Level": "41",
+        "To Next": "50,625",
+        "Total EXP": "744,800"
+    },
+    {
+        "Level": "42",
+        "To Next": "52,700",
+        "Total EXP": "795,425"
+    },
+    {
+        "Level": "43",
+        "To Next": "54,775",
+        "Total EXP": "848,125"
+    },
+    {
+        "Level": "44",
+        "To Next": "56,900",
+        "Total EXP": "902,900"
+    },
+    {
+        "Level": "45",
+        "To Next": "59,075",
+        "Total EXP": "959,800"
+    },
+    {
+        "Level": "46",
+        "To Next": "61,275",
+        "Total EXP": "1,018,875"
+    },
+    {
+        "Level": "47",
+        "To Next": "63,525",
+        "Total EXP": "1,080,150"
+    },
+    {
+        "Level": "48",
+        "To Next": "65,800",
+        "Total EXP": "1,143,675"
+    },
+    {
+        "Level": "49",
+        "To Next": "68,125",
+        "Total EXP": "1,209,475"
+    },
+    {
+        "Level": "50",
+        "To Next": "70,475",
+        "Total EXP": "1,277,600"
+    },
+    {
+        "Level": "51",
+        "To Next": "76,500",
+        "Total EXP": "1,348,075"
+    },
+    {
+        "Level": "52",
+        "To Next": "79,050",
+        "Total EXP": "1,424,575"
+    },
+    {
+        "Level": "53",
+        "To Next": "81,650",
+        "Total EXP": "1,503,625"
+    },
+    {
+        "Level": "54",
+        "To Next": "84,275",
+        "Total EXP": "1,585,275"
+    },
+    {
+        "Level": "55",
+        "To Next": "86,950",
+        "Total EXP": "1,669,550"
+    },
+    {
+        "Level": "56",
+        "To Next": "89,650",
+        "Total EXP": "1,756,500"
+    },
+    {
+        "Level": "57",
+        "To Next": "92,400",
+        "Total EXP": "1,846,150"
+    },
+    {
+        "Level": "58",
+        "To Next": "95,175",
+        "Total EXP": "1,938,550"
+    },
+    {
+        "Level": "59",
+        "To Next": "98,000",
+        "Total EXP": "2,033,725"
+    },
+    {
+        "Level": "60",
+        "To Next": "100,875",
+        "Total EXP": "2,131,725"
+    },
+    {
+        "Level": "61",
+        "To Next": "108,950",
+        "Total EXP": "2,232,600"
+    },
+    {
+        "Level": "62",
+        "To Next": "112,050",
+        "Total EXP": "2,341,550"
+    },
+    {
+        "Level": "63",
+        "To Next": "115,175",
+        "Total EXP": "2,453,600"
+    },
+    {
+        "Level": "64",
+        "To Next": "118,325",
+        "Total EXP": "2,568,775"
+    },
+    {
+        "Level": "65",
+        "To Next": "121,525",
+        "Total EXP": "2,687,100"
+    },
+    {
+        "Level": "66",
+        "To Next": "124,775",
+        "Total EXP": "2,808,625"
+    },
+    {
+        "Level": "67",
+        "To Next": "128,075",
+        "Total EXP": "2,933,400"
+    },
+    {
+        "Level": "68",
+        "To Next": "131,400",
+        "Total EXP": "3,061,475"
+    },
+    {
+        "Level": "69",
+        "To Next": "134,775",
+        "Total EXP": "3,192,875"
+    },
+    {
+        "Level": "70",
+        "To Next": "138,175",
+        "Total EXP": "3,327,650"
+    },
+    {
+        "Level": "71",
+        "To Next": "148,700",
+        "Total EXP": "3,465,825"
+    },
+    {
+        "Level": "72",
+        "To Next": "152,375",
+        "Total EXP": "3,614,525"
+    },
+    {
+        "Level": "73",
+        "To Next": "156,075",
+        "Total EXP": "3,766,900"
+    },
+    {
+        "Level": "74",
+        "To Next": "159,825",
+        "Total EXP": "3,922,975"
+    },
+    {
+        "Level": "75",
+        "To Next": "163,600",
+        "Total EXP": "4,082,800"
+    },
+    {
+        "Level": "76",
+        "To Next": "167,425",
+        "Total EXP": "4,246,400"
+    },
+    {
+        "Level": "77",
+        "To Next": "171,300",
+        "Total EXP": "4,413,825"
+    },
+    {
+        "Level": "78",
+        "To Next": "175,225",
+        "Total EXP": "4,585,125"
+    },
+    {
+        "Level": "79",
+        "To Next": "179,175",
+        "Total EXP": "4,760,350"
+    },
+    {
+        "Level": "80",
+        "To Next": "183,175",
+        "Total EXP": "4,939,525"
+    },
+    {
+        "Level": "81",
+        "To Next": "216,225",
+        "Total EXP": "5,122,700"
+    },
+    {
+        "Level": "82",
+        "To Next": "243,025",
+        "Total EXP": "5,338,925"
+    },
+    {
+        "Level": "83",
+        "To Next": "273,100",
+        "Total EXP": "5,581,950"
+    },
+    {
+        "Level": "84",
+        "To Next": "306,800",
+        "Total EXP": "5,855,050"
+    },
+    {
+        "Level": "85",
+        "To Next": "344,600",
+        "Total EXP": "6,161,850"
+    },
+    {
+        "Level": "86",
+        "To Next": "386,950",
+        "Total EXP": "6,506,450"
+    },
+    {
+        "Level": "87",
+        "To Next": "434,425",
+        "Total EXP": "6,893,400"
+    },
+    {
+        "Level": "88",
+        "To Next": "487,625",
+        "Total EXP": "7,327,825"
+    },
+    {
+        "Level": "89",
+        "To Next": "547,200",
+        "Total EXP": "7,815,450"
+    },
+    {
+        "Level": "90",
+        "To Next": "MAX",
+        "Total EXP": "8,362,650"
+    }
+]
