@@ -1,0 +1,452 @@
+[
+    {
+        "Character": "Albedo",
+        "HP": "1029.5856",
+        "ATK": "19.551",
+        "DEF": "68.2062"
+    },
+    {
+        "Character": "Alhaitham",
+        "HP": "1039.1188",
+        "ATK": "24.3922",
+        "DEF": "60.84711"
+    },
+    {
+        "Character": "Aloy",
+        "HP": "848.4548",
+        "ATK": "18.21036",
+        "DEF": "52.6504"
+    },
+    {
+        "Character": "Amber",
+        "HP": "793.2582",
+        "ATK": "18.6984",
+        "DEF": "50.358"
+    },
+    {
+        "Character": "Arataki Itto",
+        "HP": "1000.986",
+        "ATK": "17.689",
+        "DEF": "74.66784"
+    },
+    {
+        "Character": "Baizhu",
+        "HP": "1039.1188",
+        "ATK": "14.9891",
+        "DEF": "38.8895"
+    },
+    {
+        "Character": "Barbara",
+        "HP": "820.6119",
+        "ATK": "13.356",
+        "DEF": "56.0805"
+    },
+    {
+        "Character": "Beidou",
+        "HP": "1094.1492",
+        "ATK": "18.87648",
+        "DEF": "54.36375"
+    },
+    {
+        "Character": "Bennett",
+        "HP": "1039.4418",
+        "ATK": "16.0272",
+        "DEF": "64.66425"
+    },
+    {
+        "Character": "Candace",
+        "HP": "911.791",
+        "ATK": "17.808",
+        "DEF": "57.225"
+    },
+    {
+        "Character": "Charlotte",
+        "HP": "902.67309570312",
+        "ATK": "14.513520240784",
+        "DEF": "45.78"
+    },
+    {
+        "Character": "Chongyun",
+        "HP": "920.90894",
+        "ATK": "18.6984",
+        "DEF": "54.36375"
+    },
+    {
+        "Character": "Collei",
+        "HP": "820.6119",
+        "ATK": "16.73952",
+        "DEF": "50.358"
+    },
+    {
+        "Character": "Cyno",
+        "HP": "972.3864",
+        "ATK": "24.7646",
+        "DEF": "66.88994"
+    },
+    {
+        "Character": "Dehya",
+        "HP": "1220.2496",
+        "ATK": "20.6682",
+        "DEF": "48.88111"
+    },
+    {
+        "Character": "Diluc",
+        "HP": "1010.5192",
+        "ATK": "26.068",
+        "DEF": "61.0266"
+    },
+    {
+        "Character": "Diona",
+        "HP": "802.3761",
+        "ATK": "17.808",
+        "DEF": "50.358"
+    },
+    {
+        "Character": "Dori",
+        "HP": "1039.4418",
+        "ATK": "18.6984",
+        "DEF": "60.6585"
+    },
+    {
+        "Character": "Eula",
+        "HP": "1029.5856",
+        "ATK": "26.6266",
+        "DEF": "58.45391"
+    },
+    {
+        "Character": "Faruzan",
+        "HP": "802.3761",
+        "ATK": "16.4724",
+        "DEF": "52.647"
+    },
+    {
+        "Character": "Fischl",
+        "HP": "770.4634",
+        "ATK": "20.4792",
+        "DEF": "49.78575"
+    },
+    {
+        "Character": "Freminet",
+        "HP": "1012.0880126953",
+        "ATK": "21.369600296021",
+        "DEF": "59.399551391602"
+    },
+    {
+        "Character": "Furina",
+        "HP": "1191.65",
+        "ATK": "18.9924",
+        "DEF": "54.146148681641"
+    },
+    {
+        "Character": "Ganyu",
+        "HP": "762.656",
+        "ATK": "26.068",
+        "DEF": "49.0606"
+    },
+    {
+        "Character": "Gorou",
+        "HP": "802.3761",
+        "ATK": "15.31488",
+        "DEF": "54.36375"
+    },
+    {
+        "Character": "Hu Tao",
+        "HP": "1210.7164",
+        "ATK": "8.2859",
+        "DEF": "68.2062"
+    },
+    {
+        "Character": "Jean",
+        "HP": "1143.984",
+        "ATK": "18.62",
+        "DEF": "59.83"
+    },
+    {
+        "Character": "Kaedehara Kazuha",
+        "HP": "1039.1188",
+        "ATK": "23.0888",
+        "DEF": "62.8215"
+    },
+    {
+        "Character": "Kaeya",
+        "HP": "975.6164",
+        "ATK": "18.6984",
+        "DEF": "66.381"
+    },
+    {
+        "Character": "Kamisato Ayaka",
+        "HP": "1000.986",
+        "ATK": "26.6266",
+        "DEF": "61.0266"
+    },
+    {
+        "Character": "Kamisato Ayato",
+        "HP": "1067.7184",
+        "ATK": "23.275",
+        "DEF": "59.83"
+    },
+    {
+        "Character": "Kaveh",
+        "HP": "1002.9701",
+        "ATK": "19.5888",
+        "DEF": "62.9475"
+    },
+    {
+        "Character": "Keqing",
+        "HP": "1020.0524",
+        "ATK": "25.137",
+        "DEF": "62.2232"
+    },
+    {
+        "Character": "Kirara",
+        "HP": "1021.2059",
+        "ATK": "18.6984",
+        "DEF": "45.78"
+    },
+    {
+        "Character": "Klee",
+        "HP": "800.7888",
+        "ATK": "24.206",
+        "DEF": "47.864"
+    },
+    {
+        "Character": "Kujou Sara",
+        "HP": "802.3761",
+        "ATK": "16.38336",
+        "DEF": "52.647"
+    },
+    {
+        "Character": "Kuki Shinobu",
+        "HP": "1030.3239",
+        "ATK": "17.808",
+        "DEF": "62.9475"
+    },
+    {
+        "Character": "Layla",
+        "HP": "930.0268",
+        "ATK": "18.16416",
+        "DEF": "54.936"
+    },
+    {
+        "Character": "Lisa",
+        "HP": "802.3761",
+        "ATK": "19.41072",
+        "DEF": "48.069"
+    },
+    {
+        "Character": "Lynette",
+        "HP": "1039.44177246",
+        "ATK": "19.41072",
+        "DEF": "59.6856765747"
+    },
+    {
+        "Character": "Lyney",
+        "HP": "857.987976",
+        "ATK": "24.7646",
+        "DEF": "41.881"
+    },
+    {
+        "Character": "Mika",
+        "HP": "1048.5597",
+        "ATK": "18.6984",
+        "DEF": "59.800125"
+    },
+    {
+        "Character": "Mona",
+        "HP": "810.322",
+        "ATK": "22.344",
+        "DEF": "50.8555"
+    },
+    {
+        "Character": "Nahida",
+        "HP": "806.5087",
+        "ATK": "23.275",
+        "DEF": "49.0606"
+    },
+    {
+        "Character": "Neuvillette",
+        "HP": "1143.984",
+        "ATK": "16.218",
+        "DEF": "44.8725"
+    },
+    {
+        "Character": "Nilou",
+        "HP": "1182.1168",
+        "ATK": "17.8752",
+        "DEF": "56.71884"
+    },
+    {
+        "Character": "Ningguang",
+        "HP": "820.6119",
+        "ATK": "17.808",
+        "DEF": "48.069"
+    },
+    {
+        "Character": "Noelle",
+        "HP": "1012.088",
+        "ATK": "16.0272",
+        "DEF": "66.95325"
+    },
+    {
+        "Character": "Qiqi",
+        "HP": "962.8532",
+        "ATK": "22.344",
+        "DEF": "71.796"
+    },
+    {
+        "Character": "Raiden Shogun",
+        "HP": "1004.79926",
+        "ATK": "26.2542",
+        "DEF": "61.44541"
+    },
+    {
+        "Character": "Razor",
+        "HP": "1002.9701",
+        "ATK": "19.5888",
+        "DEF": "62.9475"
+    },
+    {
+        "Character": "Rosaria",
+        "HP": "1030.3239",
+        "ATK": "20.12304",
+        "DEF": "59.514"
+    },
+    {
+        "Character": "Sangonomiya Kokomi",
+        "HP": "1048.652",
+        "ATK": "18.2476",
+        "DEF": "51.15465"
+    },
+    {
+        "Character": "Sayu",
+        "HP": "993.8522",
+        "ATK": "20.4792",
+        "DEF": "62.432476"
+    },
+    {
+        "Character": "Shenhe",
+        "HP": "1011.47253",
+        "ATK": "23.6474",
+        "DEF": "64.6164"
+    },
+    {
+        "Character": "Shikanoin Heizou",
+        "HP": "893.5552",
+        "ATK": "18.87648",
+        "DEF": "57.33945"
+    },
+    {
+        "Character": "Sucrose",
+        "HP": "775.02234",
+        "ATK": "14.2464",
+        "DEF": "58.94175"
+    },
+    {
+        "Character": "Tartaglia",
+        "HP": "1020.0524",
+        "ATK": "23.4612",
+        "DEF": "63.4198"
+    },
+    {
+        "Character": "Thoma",
+        "HP": "866.2015",
+        "ATK": "16.9176",
+        "DEF": "62.9475"
+    },
+    {
+        "Character": "Tighnari",
+        "HP": "844.64154",
+        "ATK": "20.8544",
+        "DEF": "49.0606"
+    },
+    {
+        "Character": "Traveler",
+        "HP": "911.791",
+        "ATK": "17.808",
+        "DEF": "57.225"
+    },
+    {
+        "Character": "Venti",
+        "HP": "819.8552",
+        "ATK": "20.482",
+        "DEF": "52.0521"
+    },
+    {
+        "Character": "Wanderer",
+        "HP": "791.2556",
+        "ATK": "25.5094",
+        "DEF": "47.2657"
+    },
+    {
+        "Character": "Wriothesley",
+        "HP": "1058.18518",
+        "ATK": "24.206",
+        "DEF": "59.41119"
+    },
+    {
+        "Character": "Xiangling",
+        "HP": "911.791",
+        "ATK": "18.87648",
+        "DEF": "56.0805"
+    },
+    {
+        "Character": "Xiao",
+        "HP": "991.4528",
+        "ATK": "27.1852",
+        "DEF": "62.2232"
+    },
+    {
+        "Character": "Xingqiu",
+        "HP": "857.08356",
+        "ATK": "16.9176",
+        "DEF": "63.51975"
+    },
+    {
+        "Character": "Xinyan",
+        "HP": "939.1447",
+        "ATK": "20.83536",
+        "DEF": "66.95325"
+    },
+    {
+        "Character": "Yae Miko",
+        "HP": "807.46204",
+        "ATK": "26.4404",
+        "DEF": "44.2742"
+    },
+    {
+        "Character": "Yanfei",
+        "HP": "784.14026",
+        "ATK": "20.12304",
+        "DEF": "49.2135"
+    },
+    {
+        "Character": "Yaoyao",
+        "HP": "1030.3239",
+        "ATK": "17.808",
+        "DEF": "62.9475"
+    },
+    {
+        "Character": "Yelan",
+        "HP": "1124.9176",
+        "ATK": "18.9924",
+        "DEF": "42.65879"
+    },
+    {
+        "Character": "Yoimiya",
+        "HP": "791.2556",
+        "ATK": "25.137",
+        "DEF": "47.864"
+    },
+    {
+        "Character": "Yun Jin",
+        "HP": "893.5552",
+        "ATK": "16.0272",
+        "DEF": "61.5741"
+    },
+    {
+        "Character": "Zhongli",
+        "HP": "1143.984",
+        "ATK": "19.551",
+        "DEF": "57.4368"
+    }
+]

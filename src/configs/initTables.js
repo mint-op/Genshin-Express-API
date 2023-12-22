@@ -39,11 +39,12 @@ DROP TABLE IF EXISTS user_character;
 DROP TABLE IF EXISTS weapons;
 DROP TABLE IF EXISTS user_weapon;
 DROP TABLE IF EXISTS entities;
+DROP TABLE IF EXISTS quests;
+DROP TABLE IF EXISTS user_quest;
 
 CREATE TABLE userData (
     user_id INT PRIMARY KEY,
     name TEXT NOT NULL,
-    gamelvl INT NOT NULL DEFAULT 1,
     primogems INT NOT NULL DEFAULT 0,
     counter5 INT NOT NULL DEFAULT 1,
     counter4 INT NOT NULL DEFAULT 1,
@@ -78,10 +79,7 @@ CREATE TABLE user_character (
     health FLOAT NOT NULL,
     atk FLOAT NOT NULL,
     def FLOAT NOT NULL,
-    experience INT NOT NULL DEFAULT 0,
-    NORMAL_ATTACK JSON NOT NULL,
-    ELEMENTAL_SKILL JSON NOT NULL,
-    ELEMENTAL_BURST JSON NOT NULL
+    experience INT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE weapons (
@@ -113,6 +111,24 @@ CREATE TABLE entities (
     elements JSON NOT NULL,
     descriptions JSON,
     elemental_descriptions JSON
+);
+
+CREATE TABLE quests (
+    quest_id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100),
+    description TEXT NOT NULL,
+    objective JSON NOT NULL,
+    experience_reward INT NULL,
+    weapon_reward_rarity INT,
+    required_level INT NOT NULL
+);
+
+CREATE TABLE user_quest (
+    user_quest_id INT PRIMARY KEY AUTO_INCREMENT,
+    quest_id INT NOT NULL,
+    user_id INT NOT NULL,
+    count INT NOT NULL DEFAULT 0,
+    progress ENUM ('completed', 'inprogress', 'failed') NOT NULL
 );
 
 `;

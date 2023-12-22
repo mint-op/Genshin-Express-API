@@ -1,0 +1,1364 @@
+[
+    {
+        "Enemy": "Cicin",
+        "Base ATK": "10.048",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.8"
+    },
+    {
+        "Enemy": "Slime (Small, Most)",
+        "Base ATK": "7.536",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.6"
+    },
+    {
+        "Enemy": "Anemo Slime",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Large Anemo Slime",
+        "Base ATK": "35.168",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.8"
+    },
+    {
+        "Enemy": "Large Dendro Slime",
+        "Base ATK": "35.168",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.8"
+    },
+    {
+        "Enemy": "Large Hydro Slime",
+        "Base ATK": "35.168",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.8"
+    },
+    {
+        "Enemy": "Large Electro Slime",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Mutant Electro Slime",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Large Cryo Slime",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Large Pyro Slime",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Large Geo Slime",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Cryo Whopperflower",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Pyro Whopperflower",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Electro Whopperflower",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Hilichurl (Most)",
+        "Base ATK": "22.608",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.8"
+    },
+    {
+        "Enemy": "Hilichurl Grenadier",
+        "Base ATK": "45.216",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.6"
+    },
+    {
+        "Enemy": "Cryo Hilichurl Grenadier",
+        "Base ATK": "11.304",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.9"
+    },
+    {
+        "Enemy": "Hilichurl Shooter",
+        "Base ATK": "11.304",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.9"
+    },
+    {
+        "Enemy": "Cryo Hilichurl Shooter",
+        "Base ATK": "11.304",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.9"
+    },
+    {
+        "Enemy": "Pyro Hilichurl Shooter",
+        "Base ATK": "16.956",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.35"
+    },
+    {
+        "Enemy": "Electro Hilichurl Shooter",
+        "Base ATK": "16.956",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.35"
+    },
+    {
+        "Enemy": "Samachurl",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Anemoboxer Vanguard",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Electrohammer Vanguard",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Geochanter Bracer",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Pyroslinger Bracer",
+        "Base ATK": "56.52",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.5"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Cryogunner Legionnaire",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Hydrogunner Legionnaire",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarder Potioneer",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Scout",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Marksman",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Crusher",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Gravedigger",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Seaman",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Handyman",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Pugilist",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Crusher",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Nobushi",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Kairagi",
+        "Base ATK": "94.2",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "7.5"
+    },
+    {
+        "Enemy": "Specter (Most)",
+        "Base ATK": "21.98",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.75"
+    },
+    {
+        "Enemy": "Dendro Specter",
+        "Base ATK": "17.584",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.4"
+    },
+    {
+        "Enemy": "Electro Specter",
+        "Base ATK": "35.168",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2.8"
+    },
+    {
+        "Enemy": "Fungus (Most)",
+        "Base ATK": "22.608",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.8"
+    },
+    {
+        "Enemy": "Winged Dendroshroom",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Grounded Hydroshroom",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Winged Cryoshroom",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Grounded Geoshroom",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "The Eremites (Most)",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Eremite Crossbow",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Eremite Ravenbeak Halberdier",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Eremite Desert Clearwater",
+        "Base ATK": "40.192",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3.2"
+    },
+    {
+        "Enemy": "Eremite Sunfrost",
+        "Base ATK": "40.192",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3.2"
+    },
+    {
+        "Enemy": "Eremite Daythunder",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Eremite Stone Enchanter",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Eremite Floral Ring-Dancer",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Eremite Galehunter",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Eremite Scorching Loremaster",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Area Alert Mek",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Recon Log Mek",
+        "Base ATK": "22.608",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.8"
+    },
+    {
+        "Enemy": "Arithmetic Enhancer Mek",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Geological Survey Mek",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Nimble Harvester Mek",
+        "Base ATK": "17.584",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1.4"
+    },
+    {
+        "Enemy": "Assault Specialist Mek",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Suppression Specialist Mek",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Annihilation Specialist Mek",
+        "Base ATK": "57.776",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4.6"
+    },
+    {
+        "Enemy": "Construction Specialist Mek",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Underwater Survey Mek",
+        "Base ATK": "45",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Underwater Patrol Mek",
+        "Base ATK": "50",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Fontemer Aberrant (Most)",
+        "Base ATK": "45",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Blubberbeast (Underwater Large)",
+        "Base ATK": "50",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Blubberbeast (Land Large)",
+        "Base ATK": "50",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Hunter's Ray (Large)",
+        "Base ATK": "50",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Sternshield Crab",
+        "Base ATK": "60",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Hat Jellyfish (Large)",
+        "Base ATK": "50",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Bubbler Seahorse",
+        "Base ATK": "60",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Cherubic Sea Hare",
+        "Base ATK": "60",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Deepwater Assault Mek",
+        "Base ATK": "60",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": ""
+    },
+    {
+        "Enemy": "Cryo Abyss Mage",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Hydro Abyss Mage",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Pyro Abyss Mage",
+        "Base ATK": "56.52",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.5"
+    },
+    {
+        "Enemy": "Electro Abyss Mage",
+        "Base ATK": "47.1",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.75"
+    },
+    {
+        "Enemy": "Abyss Herald: Wicked Torrents",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Abyss Herald: Frost Fall",
+        "Base ATK": "56.52",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4.5"
+    },
+    {
+        "Enemy": "Abyss Lector",
+        "Base ATK": "56.52",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.5"
+    },
+    {
+        "Enemy": "Eye of the Storm",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Fatui Cicin Mage",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Fatui Pyro Agent",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Geovishap",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Geovishap Hatchling",
+        "Base ATK": "54.2592",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.32"
+    },
+    {
+        "Enemy": "Mitachurl (Axe)",
+        "Base ATK": "60.288",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.8"
+    },
+    {
+        "Enemy": "Mitachurl (Shield)",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Stonehide Lawachurl",
+        "Base ATK": "113.04",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "9"
+    },
+    {
+        "Enemy": "Frostarm Lawachurl",
+        "Base ATK": "150.72",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "12"
+    },
+    {
+        "Enemy": "Thunderhelm Lawachurl",
+        "Base ATK": "150.72",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "12"
+    },
+    {
+        "Enemy": "Ruin Guard",
+        "Base ATK": "60.288",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.8"
+    },
+    {
+        "Enemy": "Ruin Hunter",
+        "Base ATK": "175.84",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "14"
+    },
+    {
+        "Enemy": "Ruin Grader",
+        "Base ATK": "87.92",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "7"
+    },
+    {
+        "Enemy": "Ruin Cruiser",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Ruin Destroyer",
+        "Base ATK": "52.752",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.2"
+    },
+    {
+        "Enemy": "Ruin Defender",
+        "Base ATK": "56.52",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.5"
+    },
+    {
+        "Enemy": "Ruin Scout",
+        "Base ATK": "48.984",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.9"
+    },
+    {
+        "Enemy": "The Great Snowboar King",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Mirror Maiden",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Rifthound",
+        "Base ATK": "40.192",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.2"
+    },
+    {
+        "Enemy": "Rifthound Whelp",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Primordial Bathysmal Vishap",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Primordial Bathysmal Vishap Hatchling",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Bolteater Bathysmal Vishap Hatchling",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Rimebiter Bathysmal Vishap Hatchling",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Shadowy Husk: Defender",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Shadowy Husk: Line Breaker",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Shadowy Husk: Standard Bearer",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Black Serpent Knight: Windcutter",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Black Serpent Knight: Rockbreaker Ax",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Ruin Drake: Earthguard",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Ruin Drake: Skywatch",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Primal Construct",
+        "Base ATK": "45.216",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3.6"
+    },
+    {
+        "Enemy": "Consecrated Beast",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Hilichurl Rogue",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Tainted Water-Splitting Phantasm",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Tainted Water-Spouting Phantasm",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Large Shatterstone Breacher Primus",
+        "Base ATK": "87.92",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "7"
+    },
+    {
+        "Enemy": "Shatterstone Breacher Primus",
+        "Base ATK": "45.216",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3.6"
+    },
+    {
+        "Enemy": "Large Overgrown Breacher Primus",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Overgrown Breacher Primus",
+        "Base ATK": "32.656",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2.6"
+    },
+    {
+        "Enemy": "Frost Operative",
+        "Base ATK": "60.288",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4.8"
+    },
+    {
+        "Enemy": "Wind Operative",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Anemo Hypostasis",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Electro Hypostasis",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Geo Hypostasis",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Cryo Hypostasis",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Pyro Hypostasis",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Hydro Hypostasis",
+        "Base ATK": "113.04",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "9"
+    },
+    {
+        "Enemy": "Dendro Hypostasis",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Hypostasis (Hypostatic Symphony)",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Hypostasis (Hypostatic Symphony: Dissonant Verse)",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Regisvine (Most)",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Resurgent Cryo Regisvine",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Oceanid",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Primo Geovishap",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Maguu Kenki",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Dual Maguu Kenki",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Perpetual Mechanical Array",
+        "Base ATK": "90.432",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "7.2"
+    },
+    {
+        "Enemy": "Thunder Manifestation",
+        "Base ATK": "90.432",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "7.2"
+    },
+    {
+        "Enemy": "Golden Wolflord",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Coral Defenders",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Ruin Serpent",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Jadeplume Terrorshroom",
+        "Base ATK": "87.92",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "7"
+    },
+    {
+        "Enemy": "Electro Regisvine",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Aeonblight Drake",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Algorithm of Semi-Intransient Matrix of Overseer Network",
+        "Base ATK": "82.896",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6.6"
+    },
+    {
+        "Enemy": "Setekh Wenut",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Iniquitous Baptist",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Emperor of Fire and Iron",
+        "Base ATK": "113.04",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "9"
+    },
+    {
+        "Enemy": "Icewind Suite",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Millennial Pearl Seahorse",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Prototype Cal. Breguet",
+        "Base ATK": "113.04",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "9"
+    },
+    {
+        "Enemy": "Hydro Tulpa",
+        "Base ATK": "125.6",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "10"
+    },
+    {
+        "Enemy": "Andrius",
+        "Base ATK": "90.432",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "7.2"
+    },
+    {
+        "Enemy": "Dvalin",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Childe (Phase 1/2)",
+        "Base ATK": "125.6",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "10"
+    },
+    {
+        "Enemy": "Childe (Phase 3)",
+        "Base ATK": "175.84",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "14"
+    },
+    {
+        "Enemy": "Azhdaha",
+        "Base ATK": "113.04",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "9"
+    },
+    {
+        "Enemy": "Signora",
+        "Base ATK": "60.288",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4.8"
+    },
+    {
+        "Enemy": "Magatsu Mitake Narukami no Mikoto",
+        "Base ATK": "150.72",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "12"
+    },
+    {
+        "Enemy": "Everlasting Lord of Arcane Wisdom (Phase 1)",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Everlasting Lord of Arcane Wisdom (Phase 2)",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Guardian of Apep's Oasis (Phase 1)",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Guardian of Apep's Oasis (Phase 3)",
+        "Base ATK": "125.6",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "10"
+    },
+    {
+        "Enemy": "All-Devouring Narwhal",
+        "Base ATK": "125.6",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "10"
+    },
+    {
+        "Enemy": "All-Devouring Narwhal (Phantom)",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Unusual Hilichurl",
+        "Base ATK": "45.216",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Raptor",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Boss",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Liuliu",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Carmen",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Wallenstein",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Millelith Soldier",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Millelith Sergeant",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Shogunate Infantry",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Shogunate Infantry Captain",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Yoriki Samurai",
+        "Base ATK": "30.144",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2.4"
+    },
+    {
+        "Enemy": "Watatsumi Soldier: Kouzen",
+        "Base ATK": "20.096",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.6"
+    },
+    {
+        "Enemy": "Hydro Mimic Crane",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Hydro Mimic Raptor",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Hydro Mimic Mallard",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Hydro Mimic Crab",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Hydro Mimic Boar",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Hydro Mimic Ferret",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Hydro Mimic Frog",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Hydro Mimic Finch",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Hydro Mimic Crab (Event)",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Hydro Mimic Boar (Event)",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "Hydro Mimic Ferret (Event)",
+        "Base ATK": "37.68",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3"
+    },
+    {
+        "Enemy": "\"Miasmic Tumor\"",
+        "Base ATK": "5.024",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.4"
+    },
+    {
+        "Enemy": "Canine Bunshin",
+        "Base ATK": "75.36",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "6"
+    },
+    {
+        "Enemy": "Black Shadow: Hayate no Gotoku",
+        "Base ATK": "62.8",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "5"
+    },
+    {
+        "Enemy": "Beisht",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Nobushi: Hitsukeban (Event)",
+        "Base ATK": "10.048",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.8"
+    },
+    {
+        "Enemy": "Yoriki Samurai (Event)",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Kairagi: Dancing Thunder (Event)",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Kairagi: Fiery Might (Event)",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Taroumaru",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Marana's Avatar",
+        "Base ATK": "100.48",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "8"
+    },
+    {
+        "Enemy": "Spirit of Omen: Stone Drake",
+        "Base ATK": "40.192",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.2"
+    },
+    {
+        "Enemy": "Spirit of Omen: Dendro Spirit-Serpent",
+        "Base ATK": "40.192",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "3.2"
+    },
+    {
+        "Enemy": "Spirit of Omen: Wind Glede",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Spirit of Omen: Pyro Scorpion",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "4"
+    },
+    {
+        "Enemy": "Sumpter Beast (Small)",
+        "Base ATK": "12.56",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1"
+    },
+    {
+        "Enemy": "Sumpter Beast (Medium)",
+        "Base ATK": "17.584",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.4"
+    },
+    {
+        "Enemy": "Sumpter Beast (Large)",
+        "Base ATK": "22.608",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.8"
+    },
+    {
+        "Enemy": "Spinocrocodile",
+        "Base ATK": "10.048",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "0.8"
+    },
+    {
+        "Enemy": "Rishboland Tiger",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Scorpion",
+        "Base ATK": "15.072",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1.2"
+    },
+    {
+        "Enemy": "Red Vulture",
+        "Base ATK": "12.56",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "1"
+    },
+    {
+        "Enemy": "Eremite Stone Enchanter (Event)",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 1",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Mechanicus: Cleansing Flame",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Mechanicus: Frostcaller",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Mechanicus: Thunderflash",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Mechanicus: Wicked Waves",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Mechanicus: Flame of Pancha",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Mechanicus: Sharkwinter",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Mechanicus: Water Mirror",
+        "Base ATK": "32",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "~2.548"
+    },
+    {
+        "Enemy": "Tent Tortoise",
+        "Base ATK": "25.12",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "2"
+    },
+    {
+        "Enemy": "Preliminary Proliferating Organism",
+        "Base ATK": "2.512",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "0.2"
+    },
+    {
+        "Enemy": "Pernicious Proliferating Organism",
+        "Base ATK": "12.56",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "1"
+    },
+    {
+        "Enemy": "Predatory Proliferating Organism",
+        "Base ATK": "50.24",
+        "Level MultiplierType": "Type 2",
+        "Base ATK Ratioto Forest Boar": "4"
+    }
+]
