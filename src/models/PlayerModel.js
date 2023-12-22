@@ -136,11 +136,35 @@ module.exports.selectAllQuests = (callback) => {
   pool.query(sqlstatement, callback);
 };
 
-// * Query quests that are not completed by user
+// * Query quests from user_quest table
 module.exports.selectUserQuest = (data, callback) => {
   const sqlstatement = `
     SELECT * FROM user_quest WHERE user_id = ? AND progress = ?;
   `;
   const VALUES = [data.user_id, data.progress];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+module.exports.insertUserQuest = (data, callback) => {
+  const sqlstatement = `
+    INSERT INTO user_quest (quest_id, user_id, progress) VALUES (?, ?, ?);
+  `;
+  const VALUES = [data.quest_id, data.user_id, data.progress];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+module.exports.updateUserQuest = (data, callback) => {
+  const sqlstatement = `
+    UPDATE user_quest SET progress = ?, count = ? WHERE user_quest_id = ?;
+  `;
+  const VALUES = [data.progress, data.count, data.user_quest_id];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+module.exports.selectUserQuestById = (data, callback) => {
+  const sqlstatement = `
+    SELECT * FROM user_quest WHERE user_id = ? AND quest_id = ? AND progress = ?;
+  `;
+  const VALUES = [data.user_id, data.quest_id, data.progress];
   pool.query(sqlstatement, VALUES, callback);
 };

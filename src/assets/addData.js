@@ -51,9 +51,9 @@ const insertSingleEntity = (data, callback) => {
 
 const insertSingleQuest = (data, callback) => {
   const sqlstatement = `
-    INSERT INTO quests (title, description, experience_reward, weapon_reward_rarity, required_level) VALUES (?, ?, ?, ?, ?);
+    INSERT INTO quests (title, description, objective, experience_reward, weapon_reward_rarity, required_level) VALUES (?, ?, ?, ?, ?, ?);
   `;
-  const VALUES = [data.title, data.description, data.experience_reward, data.weapon_reward_rarity, data.required_level];
+  const VALUES = [data.title, data.description, data.objective, data.experience_reward, data.weapon_reward_rarity, data.required_level];
   pool.query(sqlstatement, VALUES, callback);
 };
 
@@ -181,6 +181,7 @@ const readFile = async (prefix) => {
       title: data.title,
       description: data.description,
       experience_reward: data.experience_reward,
+      objective: JSON.stringify(data.objective),
       weapon_reward_rarity: data.weapon_reward_rarity,
       primogems_reward: data.primogems_reward,
       required_level: data.required_level,

@@ -363,8 +363,53 @@ module.exports.showAllQuests = async (req, res, next) => {
 
     const userData = await getUserData;
 
-    const results = (await require('../utils/quests').ShowAllQuests(userData[0].user_id)).allQuests();
+    const allQuests = (await require('../utils/quests').showAllQuests(userData[0].user_id)).allQuests();
 
-    res.status(200).json(results);
+    res.status(200).json(allQuests);
+  }
+};
+
+module.exports.showAllQuestStatus = async (req, res, next) => {
+  const { userId } = require('./loginController');
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      const callback = (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      };
+
+      model.selectUserById(userId, callback);
+    });
+
+    const userData = await getUserData;
+
+    const userQuests = (await require('../utils/quests').showAllQuests(userData[0].user_id)).userQuests();
+
+    res.status(200).json(userQuests);
+  }
+};
+
+module.exports.selectQuestById = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { quest_id } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const selected = await require('../utils/quests').selectQuest(userData[0].user_id, quest_id);
+
+    res.status(200).json(selected);
   }
 };

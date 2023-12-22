@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Hunt the Hilichurls",
+        "description": "Hilichurls are the most common enemies in Teyvat. They are weak but can be dangerous in large numbers. Eliminate 20 Hilichurls in any region.",
+        "objective": [
+            20,
+            "hilichurl"
+        ],
+        "experience_reward": 100,
+        "weapon_reward_rarity": 4,
+        "required_level": 1
+    },
+    {
+        "title": "Defeat the Abyss Mages",
+        "description": "Abyss Mages are powerful elemental foes that can shield themselves and summon minions. Break their shields and strike them down. Defeat 5 Abyss Mages of any element.",
+        "objective": [
+            5,
+            "abyss-mage"
+        ],
+        "experience_reward": 200,
+        "weapon_reward_rarity": 3,
+        "required_level": 10
+    },
+    {
+        "title": "Slay the Ruin Guards",
+        "description": "Ruin Guards are ancient machines that guard the secrets of the past. They are heavily armored and can launch missiles from afar. Find their weak spots and destroy them. Slay 3 Ruin Guards in any region.",
+        "objective": [
+            3,
+            "ruin-guard"
+        ],
+        "experience_reward": 300,
+        "weapon_reward_rarity": 3,
+        "required_level": 20
+    },
+    {
+        "title": "Challenge the Fatui Skirmishers",
+        "description": "Fatui Skirmishers are elite agents of the Fatui, a hostile foreign power. They have various elemental abilities and can buff their allies. Fight them with caution. Challenge 10 Fatui Skirmishers of any type.",
+        "objective": [
+            10,
+            "fatui-skirmisher"
+        ],
+        "experience_reward": 400,
+        "weapon_reward_rarity": 4,
+        "required_level": 30
+    },
+    {
+        "title": "Destroy the Ruin Hunters",
+        "description": "Ruin Hunters are upgraded versions of Ruin Guards. They are faster, stronger, and can fly. Use ranged attacks or elemental skills to bring them down. Destroy 2 Ruin Hunters in any region.",
+        "objective": [
+            2,
+            "ruin-hunter"
+        ],
+        "experience_reward": 600,
+        "weapon_reward_rarity": 5,
+        "required_level": 45
+    },
+    {
+        "title": "Eliminate the Geovishaps",
+        "description": "Geovishaps are fierce geo creatures that can burrow underground and ambush their prey. They are resistant to physical damage and can change their element. Eliminate 4 Geovishaps of any element.",
+        "objective": [
+            4,
+            "geovishap"
+        ],
+        "experience_reward": 700,
+        "weapon_reward_rarity": 5,
+        "required_level": 50
+    }
+]

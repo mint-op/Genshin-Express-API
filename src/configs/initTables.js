@@ -117,6 +117,7 @@ CREATE TABLE quests (
     quest_id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
     description TEXT NOT NULL,
+    objective JSON NOT NULL,
     experience_reward INT NULL,
     weapon_reward_rarity INT,
     required_level INT NOT NULL
@@ -126,6 +127,7 @@ CREATE TABLE user_quest (
     user_quest_id INT PRIMARY KEY AUTO_INCREMENT,
     quest_id INT NOT NULL,
     user_id INT NOT NULL,
+    count INT NOT NULL DEFAULT 0,
     progress ENUM ('completed', 'inprogress', 'failed') NOT NULL
 );
 

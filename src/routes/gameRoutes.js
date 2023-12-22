@@ -19,7 +19,8 @@ router.get('/inventory/weapons/:uweap_id', controller.inventoryWeap);
 
 // Quest Route
 router.get('/quests', controller.showAllQuests);
-// router.get('/quests/accept/:quest_id', controller.AcceptQuest);
+router.get('/quests/status', controller.showAllQuestStatus);
+router.get('/quests/accept/:quest_id', controller.selectQuestById);
 
 // Preparation (Party Creation)
 router.get('/party', controller.showPartyMembers);
