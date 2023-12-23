@@ -87,7 +87,7 @@ CREATE TABLE weapons (
     name VARCHAR(50) NOT NULL,
     type ENUM ('SWORD', 'BOW', 'POLEARM', 'CATALYST', 'CLAYMORE') NOT NULL,
     rarity INT NOT NULL,
-    baseAttack INT NOT NULL,
+    baseAttack FLOAT NOT NULL,
     subStat VARCHAR(50) NOT NULL
 );
 
@@ -96,7 +96,7 @@ CREATE TABLE user_weapon (
     user_id INT NOT NULL,
     weapon_id INT NOT NULL,
     level INT NOT NULL DEFAULT 1,
-    totalAttack INT NOT NULL
+    totalAttack FLOAT NOT NULL
 );
 
 CREATE TABLE entities (

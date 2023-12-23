@@ -95,6 +95,22 @@ module.exports.updateUserCharWeap = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
+module.exports.updateUserCharacterById = (data, callback) => {
+  const sqlstatement = `
+    UPDATE user_character SET level = ?, health = ?, atk = ?, def = ? WHERE character_id = ?;
+  `;
+  const VALUES = [data.level, data.health, data.atk, data.def, data.character_id];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+module.exports.updateUserWeaponById = (data, callback) => {
+  const sqlstatement = `
+    UPDATE user_weapon SET level = ?, totalAttack = ? WHERE weapon_id = ?;
+  `;
+  const VALUES = [data.level, data.totalAttack, data.weapon_id];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
 // ===================================================================
 
 // Character & Weapon Model

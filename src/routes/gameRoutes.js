@@ -14,15 +14,20 @@ router.get('/gacha_multi', controller.gachaMulti, controller.insertGachaResult, 
 router.get('/inventory', controller.inventoryAll);
 router.get('/inventory/characters', controller.inventoryChars);
 router.get('/inventory/characters/:uchar_id', controller.inventoryChar);
+// (Character Upgrade)
+router.get('/inventory/characters/upgrade/:uchar_id', controller.upgradeChar);
 router.get('/inventory/weapons', controller.inventoryWeaps);
 router.get('/inventory/weapons/:uweap_id', controller.inventoryWeap);
+// (Weapon Upgrade)
+router.get('/inventory/weapons/upgrade/:uweap_id', controller.upgradeWeap);
 
 // Quest Route
 router.get('/quests', controller.showAllQuests);
 router.get('/quests/status', controller.showAllQuestStatus);
 router.get('/quests/accept/:quest_id', controller.selectQuestById);
 
-// Preparation (Party Creation)
+// Preparation
+// (Party Creation)
 router.get('/party', controller.showPartyMembers);
 router.get('/party/add/:uchar_id', controller.addCharacterToParty);
 router.get('/party/remove/:uchar_id', controller.removeCharacterFromParty);
