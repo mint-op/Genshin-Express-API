@@ -26,6 +26,11 @@
     },
     {
         "Rarity": "4-Star",
+        "Value": "39.07",
+        "Multiplier": "Tier 1"
+    },
+    {
+        "Rarity": "4-Star",
         "Value": "41.07",
         "Multiplier": "Tier 1"
     },
@@ -33,6 +38,11 @@
         "Rarity": "4-Star",
         "Value": "42.40",
         "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "43.40",
+        "Multiplier": "Tier 3"
     },
     {
         "Rarity": "4-Star",
@@ -48,6 +58,11 @@
         "Rarity": "5-Star",
         "Value": "44.34",
         "Multiplier": "Tier 1"
+    },
+    {
+        "Rarity": "5-Star",
+        "Value": "45.40",
+        "Multiplier": "Tier 2"
     },
     {
         "Rarity": "5-Star",

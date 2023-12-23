@@ -14,7 +14,10 @@ const pool = mysql.createPool({
 });
 
 const insertSingleCharacter = (data, callback) => {
+  // Define the SQL statement with placeholders for insertion
   const sqlstatement = `INSERT INTO characters (name, title, vision_key, weapon_type, gender, nation, affiliation, rarity, release_date, constellation, birthday, description, NORMAL_ATTACK, ELEMENTAL_SKILL, ELEMENTAL_BURST) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);`;
+
+  // Map data fields to the VALUES array
   const VALUES = [
     data.name,
     data.title,
@@ -32,6 +35,8 @@ const insertSingleCharacter = (data, callback) => {
     data.ELEMENTAL_SKILL,
     data.ELEMENTAL_BURST,
   ];
+
+  // Execute the SQL query with the values array
   pool.query(sqlstatement, VALUES, callback);
 };
 
@@ -57,18 +62,31 @@ const insertSingleQuest = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
+/**
+ * Asynchronously reads a directory and its subdirectories, and applies filters based on file content
+ * to perform insert operations into a database. This is a high-level function that branches into
+ * different insert operations depending on the type of data (characters, weapons, or enemies).
+ */
 const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
   try {
-    const parsedDataArray = []; // Array to store parsed data
+    const parsedDataArray = []; // Array to store parsed JSON data from files.
 
+    /**
+     * Synchronously traverses a given directory, reading the files and directories within.
+     * If a directory is found, it recursively traverses it. If a file is found, it is read
+     * and its content is parsed as JSON and stored in parsedDataArray.
+     */
     const traverse = (folder) => {
+      // Read the contents of the folder.
       const items = fs.readdirSync(`${prefix}/${folder}`);
       for (const file of items) {
         const path = `${folder}/${file}`;
         const stats = fs.lstatSync(`${prefix}/${path}`);
+        // If the path is a directory, recurse into it.
         if (stats.isDirectory()) {
           traverse(path);
         } else {
+          // Read and parse file content, then store it in the array.
           const content = fs.readFileSync(`${prefix}/${path}`, 'utf-8');
           const parsed = JSON.parse(content);
           parsedDataArray.push(parsed);
@@ -76,8 +94,12 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
       }
     };
 
+    // Start the directory traversal from baseDir.
     traverse(baseDir);
 
+    /**
+     * Wraps an insert operation in a Promise to handle asynchronous execution.
+     */
     const insertData = async (temp, insertFunction) => {
       return new Promise((resolve, reject) => {
         insertFunction(temp, (errors, results, fields) => {
@@ -92,7 +114,13 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
       });
     };
 
+    // Define insert functions for characters, weapons, and entities.
+    // Each function formats the data and calls insertData with the appropriate insert function.
+    /**
+     * Inserts character data into the database.
+     */
     const insertCharacter = async (data) => {
+      // Format character data and call insertData.
       const temp = {
         name: data.name,
         title: data.title,
@@ -114,19 +142,34 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
       await insertData(temp, insertSingleCharacter);
     };
 
+    /**
+     * Inserts weapon data into the database.
+     */
     const insertWeapon = async (data) => {
+      // Format weapon data and call insertData.
+      const atk = await require('./queryDist')
+        .readJSON('weapon-values.json')
+        .filter((f) => f.Rarity[0] == data.rarity)
+        .find((f) => Math.round(f.Value) == data.baseAttack); // * filter by rarity
+
+      // console.log(atk, data.name, data.rarity, data.baseAttack); // For Debugging
+
       const temp = {
         name: data.name,
         type: data.type,
         rarity: data.rarity,
-        baseAttack: data.baseAttack,
+        baseAttack: parseFloat(atk.Value),
         subStat: data.subStat,
       };
 
       await insertData(temp, insertSingleWeapon);
     };
 
+    /**
+     * Inserts entity data into the database.
+     */
     const insertEntity = async (data) => {
+      // Format entity data and call insertData.
       const temp = {
         creature_id: data.id,
         name: data.name,
@@ -143,6 +186,7 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
       await insertData(temp, insertSingleEntity);
     };
 
+    // Depending on the prefix, use the appropriate insert function for the parsed data.
     if (prefix === path.join(__dirname, 'data/characters')) {
       /**
        * * uses Promise.all and map to asynchronously insert each item in the parsedDataArray
@@ -159,9 +203,16 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
   }
 };
 
+/**
+ * Reads the quest data from a file and inserts it into the database.
+ */
 const readFile = async (prefix) => {
+  // Read the JSON data from the file with the given prefix.
   const questData = await require('./queryDist').readJSON(prefix);
 
+  /**
+   * Inserts data into the database using a provided insert function.
+   */
   const insertData = (temp, insertFunction) => {
     return new Promise((resolve, reject) => {
       insertFunction(temp, (errors, results, fields) => {
@@ -169,14 +220,17 @@ const readFile = async (prefix) => {
           console.error(`Error inserting data for file`, errors);
           reject(errors);
         } else {
-          // console.log(results);   // * For debuging
           resolve(results);
         }
       });
     });
   };
 
+  /**
+   * Prepares and inserts quest data into the database.
+   */
   const insertQuest = async (data) => {
+    // Prepare the data for insertion.
     const temp = {
       title: data.title,
       description: data.description,
@@ -187,9 +241,11 @@ const readFile = async (prefix) => {
       required_level: data.required_level,
     };
 
+    // Wait for the data to be inserted.
     await insertData(temp, insertSingleQuest);
   };
 
+  // If the prefix matches 'quests.json', insert all quest data into the database.
   if (prefix === 'quests.json') {
     await Promise.all(questData.map(insertQuest));
   }
@@ -197,32 +253,39 @@ const readFile = async (prefix) => {
 
 // ... existing code ...
 
-// * The __dirname variable provides the directory name of the current module (i.e., the directory of the script)
+// The following Promise.all will attempt to read and insert data from multiple directories, and then insert quest data.
 Promise.all([
   readDirectoryRecursiveWithFilter('', path.join(__dirname, 'data/characters')),
   readDirectoryRecursiveWithFilter('', path.join(__dirname, 'data/weapons')),
   readDirectoryRecursiveWithFilter('', path.join(__dirname, 'data/enemies')),
-  readFile('quests.json'),
+  readFile('quests.json'), // Call readFile specifically for 'quests.json'
 ])
   .then(() => {
+    // If all data is read and inserted without error, start a countdown.
     startCountdown(5);
   })
   .catch((error) => {
+    // If there is an error, log it and exit with a failure code.
     console.error('An error occurred during data insertion:', error);
-    process.exit(1); // Exit with a "failure" code
+    process.exit(1);
   });
 
+/**
+ * Starts a countdown and logs the remaining time every second.
+ */
 function startCountdown(seconds) {
   let counter = seconds;
 
+  // Set up an interval to count down every second.
   const interval = setInterval(() => {
     process.stdout.write(`Waiting for ${counter} more seconds...\r`);
     counter--;
 
+    // If the countdown reaches 0, clear the interval, log the message, and exit with a success code.
     if (counter < 1) {
       clearInterval(interval);
       console.log('Finished inserting all data. Exiting now...');
-      process.exit(0); // Exit with a "success" code
+      process.exit(0);
     }
   }, 1000);
 }
