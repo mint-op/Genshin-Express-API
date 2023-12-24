@@ -556,3 +556,46 @@ module.exports.upgradeWeap = async (req, res, next) => {
     }
   }
 };
+
+module.exports.showAllEntities = async (req, res, next) => {
+  const { userId } = require('./loginController');
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const results = (await require('../utils/combat').combat(userData[0].user_id)).showAllEntities();
+
+    res.status(200).json(results);
+  }
+};
+
+module.exports.selectEntityByIndex = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { idx } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const results = (await require('../utils/combat').combat(userData[0].user_id)).selectEntity(idx);
+
+    res.status(200).json(results);
+  }
+};

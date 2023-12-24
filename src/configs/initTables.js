@@ -100,7 +100,7 @@ CREATE TABLE user_weapon (
 );
 
 CREATE TABLE entities (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    entity_id INT PRIMARY KEY AUTO_INCREMENT,
     creature_id VARCHAR(50),
     name VARCHAR(50) NOT NULL,
     description TEXT,
@@ -110,7 +110,8 @@ CREATE TABLE entities (
     faction VARCHAR(50),
     elements JSON NOT NULL,
     descriptions JSON,
-    elemental_descriptions JSON
+    elemental_descriptions JSON,
+    exp VARCHAR(50)
 );
 
 CREATE TABLE quests (
@@ -129,6 +130,27 @@ CREATE TABLE user_quest (
     user_id INT NOT NULL,
     count INT NOT NULL DEFAULT 0,
     progress ENUM ('completed', 'inprogress', 'failed') NOT NULL
+);
+
+CREATE TABLE combat (
+    combat_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    user_character_id JSON NOT NULL,
+    entity_id INT NOT NULL,
+    start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_time TIMESTAMP,
+    outcome ENUM ('victory', 'defeat')
+);
+
+CREATE TABLE combatlog (
+    combatlog_id INT PRIMARY KEY AUTO_INCREMENT,
+    combat_id INT NOT NULL,
+    user_character_id INT NOT NULL,
+    user_character_action JSON NOT NULL,
+    user_character_health FLOAT NOT NULL,
+    entity_health FLOAT NOT NULL,
+    elemental_interaction ENUM ('neutral', 'immune', 'effective'),
+    combat_status ENUM ('active', 'defeated')
 );
 
 `;

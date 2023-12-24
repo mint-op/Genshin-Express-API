@@ -33,4 +33,9 @@ router.get('/party/add/:uchar_id', controller.addCharacterToParty);
 router.get('/party/remove/:uchar_id', controller.removeCharacterFromParty);
 router.get('/party/replace/:uchar_id/:uweap_id', controller.updateWeaponForParty);
 
+// Combat Route
+router.get('/combat/list', controller.showAllEntities);
+router.get('/combat/attack/:idx', controller.selectEntityByIndex);
+router.get('/combat/attack/:partyIdx/:skillIdx', controller.attackEntity);
+
 module.exports = router;
