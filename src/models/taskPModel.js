@@ -32,9 +32,10 @@ module.exports.selectById = (id, callback) => {
 
 module.exports.updateById_notes = (data, callback) => {
   const sqlstatement = `
-    UPDATE taskprogress SET notes = ?;
+    UPDATE taskprogress SET notes = ? WHERE progress_id = ?;
     `;
-  pool.query(sqlstatement, data, callback);
+  const VALUES = [data.notes, data.progress_id];
+  pool.query(sqlstatement, VALUES, callback);
 };
 
 module.exports.deleteProgress = (id, callback) => {

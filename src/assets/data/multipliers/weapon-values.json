@@ -1,0 +1,82 @@
+[
+    {
+        "Rarity": "1-Star",
+        "Value": "23.25",
+        "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "2-Star",
+        "Value": "32.93",
+        "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "3-Star",
+        "Value": "37.61",
+        "Multiplier": "Tier 1"
+    },
+    {
+        "Rarity": "3-Star",
+        "Value": "38.74",
+        "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "3-Star",
+        "Value": "39.88",
+        "Multiplier": "Tier 3"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "39.07",
+        "Multiplier": "Tier 1"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "41.07",
+        "Multiplier": "Tier 1"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "42.40",
+        "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "43.40",
+        "Multiplier": "Tier 3"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "43.73",
+        "Multiplier": "Tier 3"
+    },
+    {
+        "Rarity": "4-Star",
+        "Value": "45.07",
+        "Multiplier": "Tier 4"
+    },
+    {
+        "Rarity": "5-Star",
+        "Value": "44.34",
+        "Multiplier": "Tier 1"
+    },
+    {
+        "Rarity": "5-Star",
+        "Value": "45.40",
+        "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "5-Star",
+        "Value": "45.94",
+        "Multiplier": "Tier 2"
+    },
+    {
+        "Rarity": "5-Star",
+        "Value": "47.54",
+        "Multiplier": "Tier 3"
+    },
+    {
+        "Rarity": "5-Star",
+        "Value": "49.13",
+        "Multiplier": "Tier 4"
+    }
+]

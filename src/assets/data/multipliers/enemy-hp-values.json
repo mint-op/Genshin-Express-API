@@ -1,0 +1,1280 @@
+[
+    {
+        "Enemy": "Cicin",
+        "Base HP": "6.792",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.5"
+    },
+    {
+        "Enemy": "Slime",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Large Slime",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Whopperflower",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Hilichurl (Except Cryo Grenadier)",
+        "Base HP": "13.584",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1"
+    },
+    {
+        "Enemy": "Cryo Hilichurl Grenadier",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Hilichurl Shooter",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Samachurl",
+        "Base HP": "13.584",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Anemoboxer Vanguard",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Electrohammer Vanguard",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Geochanter Bracer",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Pyroslinger Bracer",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Cryogunner Legionnaire",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Fatui Skirmisher - Hydrogunner Legionnaire",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Treasure Hoarder Potioneer",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Scout",
+        "Base HP": "16.3008",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Marksman",
+        "Base HP": "16.3008",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Crusher",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Gravedigger",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Seaman",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Handyman",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Pugilist",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Crusher",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Nobushi",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Kairagi",
+        "Base HP": "65.2032",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4.8"
+    },
+    {
+        "Enemy": "Specter",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Fungus (Most)",
+        "Base HP": "13.584",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1"
+    },
+    {
+        "Enemy": "Winged Dendroshroom",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Grounded Hydroshroom",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Winged Cryoshroom",
+        "Base HP": "38.0352",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.8"
+    },
+    {
+        "Enemy": "Grounded Geoshroom",
+        "Base HP": "38.0352",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.8"
+    },
+    {
+        "Enemy": "The Eremite (Most)",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Eremite Desert Clearwater",
+        "Base HP": "48.9024",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3.6"
+    },
+    {
+        "Enemy": "Eremite Sunfrost",
+        "Base HP": "48.9024",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3.6"
+    },
+    {
+        "Enemy": "Eremite Daythunder",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Eremite Stone Enchanter",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Eremite Floral Ring-Dancer",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Eremite Galehunter",
+        "Base HP": "59.7696",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4.4"
+    },
+    {
+        "Enemy": "Eremite Scorching Loremaster",
+        "Base HP": "59.7696",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4.4"
+    },
+    {
+        "Enemy": "Area Alert Mek",
+        "Base HP": "19.0176",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.4"
+    },
+    {
+        "Enemy": "Recon Log Mek",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Arithmetic Enhancer Mek",
+        "Base HP": "24.4512",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.8"
+    },
+    {
+        "Enemy": "Geological Survey Mek",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Nimble Harvester Mek",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.4"
+    },
+    {
+        "Enemy": "Assault Specialist Mek",
+        "Base HP": "65.2032",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4.8"
+    },
+    {
+        "Enemy": "Suppression Specialist Mek",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Annihilation Specialist Mek",
+        "Base HP": "70.6368",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5.2"
+    },
+    {
+        "Enemy": "Construction Specialist Mek",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Underwater Survey Mek",
+        "Base HP": "19.48134",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Underwater Patrol Mek",
+        "Base HP": "32.4689",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Fontemer Aberrant (Most)",
+        "Base HP": "19.48134",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Blubberbeast (Underwater Large)",
+        "Base HP": "32.469",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Blubberbeast (Land Large)",
+        "Base HP": "17.6592",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.3"
+    },
+    {
+        "Enemy": "Blubberbeast (Land Small)",
+        "Base HP": "10.59552",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "0.78"
+    },
+    {
+        "Enemy": "Hunter's Ray (Large)",
+        "Base HP": "32.469",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Armored Crab (Land)",
+        "Base HP": "10.59552",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "0.78"
+    },
+    {
+        "Enemy": "Sternshield Crab (Underwater)",
+        "Base HP": "64.9378",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Sternshield Crab (Land)",
+        "Base HP": "35.3184",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.6"
+    },
+    {
+        "Enemy": "Hat Jellyfish (Large)",
+        "Base HP": "32.469",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Bubbler Seahorse (Underwater)",
+        "Base HP": "64.9378",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Bubbler Seahorse (Land)",
+        "Base HP": "35.3184",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.6"
+    },
+    {
+        "Enemy": "Cherubic Sea Hare (Underwater)",
+        "Base HP": "64.9378",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Cherubic Sea Hare (Land)",
+        "Base HP": "35.3184",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.6"
+    },
+    {
+        "Enemy": "Deepwater Assault Mek",
+        "Base HP": "64.9378",
+        "Level MultiplierType": "Type 3",
+        "Base HP Ratioto Hilichurl": ""
+    },
+    {
+        "Enemy": "Abyss Mage",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Abyss Herald",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Abyss Lector",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Eye of the Storm",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Fatui Cicin Mage",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Fatui Agent",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Geovishap",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Geovishap Hatchling",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Mitachurl",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Lawachurl",
+        "Base HP": "122.256",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "9"
+    },
+    {
+        "Enemy": "Ruin Guard",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Ruin Hunter",
+        "Base HP": "81.504",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "6"
+    },
+    {
+        "Enemy": "Ruin Grader",
+        "Base HP": "122.256",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "9"
+    },
+    {
+        "Enemy": "Ruin Cruiser",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Ruin Destroyer",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Ruin Defender",
+        "Base HP": "57.0528",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4.2"
+    },
+    {
+        "Enemy": "Ruin Scout",
+        "Base HP": "57.0528",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4.2"
+    },
+    {
+        "Enemy": "The Great Snowboar King",
+        "Base HP": "149.424",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "11"
+    },
+    {
+        "Enemy": "Mirror Maiden",
+        "Base HP": "81.504",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "6"
+    },
+    {
+        "Enemy": "Rifthound",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Rifthound Whelp",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.4"
+    },
+    {
+        "Enemy": "Primordial Bathysmal Vishap",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Primordial Bathysmal Vishap Hatchling",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Bolteater Bathysmal Vishap Hatchling",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Rimebiter Bathysmal Vishap Hatchling",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Shadowy Husk: Defender",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Shadowy Husk: Line Breaker",
+        "Base HP": "81.504",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "6"
+    },
+    {
+        "Enemy": "Shadowy Husk: Standard Bearer",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Black Serpent Knight: Windcutter",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Black Serpent Knight: Rockbreaker Ax",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Ruin Drake: Earthguard",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Ruin Drake: Skywatch",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Primal Construct",
+        "Base HP": "46.1856",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3.4"
+    },
+    {
+        "Enemy": "Consecrated Beast",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Hilichurl Rogue",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Tainted Water-Splitting Phantasm",
+        "Base HP": "67.92",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5"
+    },
+    {
+        "Enemy": "Tainted Water-Spouting Phantasm",
+        "Base HP": "54.336",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "4"
+    },
+    {
+        "Enemy": "Large Shatterstone Breacher Primus",
+        "Base HP": "97.8048",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7.2"
+    },
+    {
+        "Enemy": "Shatterstone Breacher Primus",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.4"
+    },
+    {
+        "Enemy": "Large Overgrown Breacher Primus",
+        "Base HP": "114.1056",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "8.4"
+    },
+    {
+        "Enemy": "Overgrown Breacher Primus",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Frost Operative",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Wind Operative",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Hypostasis (Most)",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Hydro Hypostasis",
+        "Base HP": "122.256",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "9"
+    },
+    {
+        "Enemy": "Dendro Hypostasis",
+        "Base HP": "122.256",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "9"
+    },
+    {
+        "Enemy": "Hypostasis (Hypostatic Symphony)",
+        "Base HP": "149.424",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "11"
+    },
+    {
+        "Enemy": "Hypostasis (Hypostatic Symphony: Dissonant Verse)",
+        "Base HP": "122.256",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "9"
+    },
+    {
+        "Enemy": "Regisvine",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Resurgent Cryo Regisvine",
+        "Base HP": "149.424",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "11"
+    },
+    {
+        "Enemy": "Oceanid",
+        "Base HP": "135.84",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "10"
+    },
+    {
+        "Enemy": "Oceanid (Event)",
+        "Base HP": "190.176",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "14"
+    },
+    {
+        "Enemy": "Primo Geovishap",
+        "Base HP": "407.52",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "30"
+    },
+    {
+        "Enemy": "Maguu Kenki",
+        "Base HP": "271.68",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "20"
+    },
+    {
+        "Enemy": "Dual Maguu Kenki",
+        "Base HP": "217.344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "16"
+    },
+    {
+        "Enemy": "Perpetual Mechanical Array",
+        "Base HP": "217.344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "16"
+    },
+    {
+        "Enemy": "Thunder Manifestation",
+        "Base HP": "190.176",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "14"
+    },
+    {
+        "Enemy": "Golden Wolflord",
+        "Base HP": "163.008",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "12"
+    },
+    {
+        "Enemy": "Coral Defenders",
+        "Base HP": "163.008",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "12"
+    },
+    {
+        "Enemy": "Ruin Serpent",
+        "Base HP": "217.344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "16"
+    },
+    {
+        "Enemy": "Jadeplume Terrorshroom",
+        "Base HP": "190.176",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "14"
+    },
+    {
+        "Enemy": "Aeonblight Drake",
+        "Base HP": "230.928",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "17"
+    },
+    {
+        "Enemy": "Algorithm of Semi-Intransient Matrix of Overseer Network",
+        "Base HP": "217.344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "16"
+    },
+    {
+        "Enemy": "Setekh Wenut",
+        "Base HP": "203.76",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "15"
+    },
+    {
+        "Enemy": "Iniquitous Baptist",
+        "Base HP": "135.84",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "10"
+    },
+    {
+        "Enemy": "Emperor of Fire and Iron",
+        "Base HP": "163.008",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "12"
+    },
+    {
+        "Enemy": "Icewind Suite",
+        "Base HP": "203.76",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "15"
+    },
+    {
+        "Enemy": "Millennial Pearl Seahorse",
+        "Base HP": "149.424",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "11"
+    },
+    {
+        "Enemy": "Prototype Cal. Breguet",
+        "Base HP": "213.2688",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "15.7"
+    },
+    {
+        "Enemy": "Hydro Tulpa",
+        "Base HP": "298.848",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "22"
+    },
+    {
+        "Enemy": "Andrius",
+        "Base HP": "244.512",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "18"
+    },
+    {
+        "Enemy": "Dvalin",
+        "Base HP": "122.256",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "9"
+    },
+    {
+        "Enemy": "Childe (Phase 1/2)",
+        "Base HP": "81.504",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "6"
+    },
+    {
+        "Enemy": "Childe (Phase 3)",
+        "Base HP": "135.84",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "10"
+    },
+    {
+        "Enemy": "Azhdaha",
+        "Base HP": "489.024",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "36"
+    },
+    {
+        "Enemy": "La Signora (Phase 1)",
+        "Base HP": "135.84",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "10"
+    },
+    {
+        "Enemy": "La Signora (Phase 2)",
+        "Base HP": "271.68",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "20"
+    },
+    {
+        "Enemy": "Magatsu Mitake Narukami no Mikoto",
+        "Base HP": "543.36",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "40"
+    },
+    {
+        "Enemy": "Everlasting Lord of Arcane Wisdom (Phase 1)",
+        "Base HP": "271.68",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "20"
+    },
+    {
+        "Enemy": "Everlasting Lord of Arcane Wisdom (Phase 2)",
+        "Base HP": "244.512",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "18"
+    },
+    {
+        "Enemy": "Guardian of Apep's Oasis (Phase 1)",
+        "Base HP": "244.512",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "18"
+    },
+    {
+        "Enemy": "Guardian of Apep's Oasis (Phase 3)",
+        "Base HP": "217.344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "16"
+    },
+    {
+        "Enemy": "All-Devouring Narwhal",
+        "Base HP": "543.36",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "40"
+    },
+    {
+        "Enemy": "All-Devouring Narwhal (Phantom)",
+        "Base HP": "326.016",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "24"
+    },
+    {
+        "Enemy": "Unusual Hilichurl",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Raptor",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Boss",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Liuliu",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Carmen",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Treasure Hoarders: Wallenstein",
+        "Base HP": "108.672",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "8"
+    },
+    {
+        "Enemy": "Millelith Soldier",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Millelith Sergeant",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2.4"
+    },
+    {
+        "Enemy": "Shogunate Infantry",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Shogunate Infantry Captain",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "2.4"
+    },
+    {
+        "Enemy": "Yoriki Samurai",
+        "Base HP": "48.9024",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3.6"
+    },
+    {
+        "Enemy": "Watatsumi Soldier: Kouzen",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Watatsumi Soldier: Kouzen (Event)",
+        "Base HP": "107.65",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "~7.925"
+    },
+    {
+        "Enemy": "Hydro Mimic Crane",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Hydro Mimic Raptor",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Hydro Mimic Mallard",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Hydro Mimic Crab",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Hydro Mimic Boar",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Hydro Mimic Ferret",
+        "Base HP": "19.0176",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.4"
+    },
+    {
+        "Enemy": "Hydro Mimic Frog",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Hydro Mimic Finch",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Hydro Mimic Crab (Event)",
+        "Base HP": "8.1504",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.6"
+    },
+    {
+        "Enemy": "Hydro Mimic Boar (Event)",
+        "Base HP": "46.1856",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3.4"
+    },
+    {
+        "Enemy": "Hydro Mimic Ferret (Event)",
+        "Base HP": "46.1856",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3.4"
+    },
+    {
+        "Enemy": "\"Miasmic Tumor\"",
+        "Base HP": "203.76",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "15"
+    },
+    {
+        "Enemy": "Canine Bunshin",
+        "Base HP": "815.04",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "60"
+    },
+    {
+        "Enemy": "Black Shadow: Hayate no Gotoku",
+        "Base HP": "203.76",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "15"
+    },
+    {
+        "Enemy": "Beisht",
+        "Base HP": "81.504",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "6"
+    },
+    {
+        "Enemy": "Nobushi: Hitsukeban (Event)",
+        "Base HP": "76.0704",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "5.6"
+    },
+    {
+        "Enemy": "Yoriki Samurai (Hues of the Violet Garden)",
+        "Base HP": "86.9376",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "6.4"
+    },
+    {
+        "Enemy": "Yoriki Samurai (Warrior's Spirit)",
+        "Base HP": "123.02",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~9.056"
+    },
+    {
+        "Enemy": "Kairagi: Dancing Thunder (Event)",
+        "Base HP": "103.2384",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7.6"
+    },
+    {
+        "Enemy": "Kairagi: Fiery Might (Event)",
+        "Base HP": "137.248",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~10.104"
+    },
+    {
+        "Enemy": "Taroumaru (Hues of the Violet Garden)",
+        "Base HP": "95.088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "7"
+    },
+    {
+        "Enemy": "Taroumaru (Warrior's Spirit)",
+        "Base HP": "117.64",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~8.66"
+    },
+    {
+        "Enemy": "Marana's Avatar",
+        "Base HP": "40.752",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "3"
+    },
+    {
+        "Enemy": "Spirit of Omen: Stone Drake",
+        "Base HP": "20.376",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.5"
+    },
+    {
+        "Enemy": "Spirit of Omen: Dendro Spirit-Serpent",
+        "Base HP": "20.376",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.5"
+    },
+    {
+        "Enemy": "Spirit of Omen: Wind Glede",
+        "Base HP": "17.93088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.32"
+    },
+    {
+        "Enemy": "Spirit of Omen: Pyro Scorpion",
+        "Base HP": "17.93088",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.32"
+    },
+    {
+        "Enemy": "Sumpter Beast (Wild Small)",
+        "Base HP": "2.7168",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.2"
+    },
+    {
+        "Enemy": "Sumpter Beast (Wild Medium)",
+        "Base HP": "8.1504",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.6"
+    },
+    {
+        "Enemy": "Sumpter Beast (Wild Large)",
+        "Base HP": "13.584",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1"
+    },
+    {
+        "Enemy": "Sumpter Beast (Faction Small)",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Sumpter Beast (Faction Medium)",
+        "Base HP": "16.3008",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.2"
+    },
+    {
+        "Enemy": "Sumpter Beast (Faction Large)",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Spinocrocodile",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Rishboland Tiger",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Scorpion",
+        "Base HP": "10.8672",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.8"
+    },
+    {
+        "Enemy": "Red Vulture",
+        "Base HP": "8.1504",
+        "Level MultiplierType": "Type 1",
+        "Base HP Ratioto Hilichurl": "0.6"
+    },
+    {
+        "Enemy": "Eremite Stone Enchanter (Event)",
+        "Base HP": "138.4",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~10.188"
+    },
+    {
+        "Enemy": "Mechanicus: Cleansing Flame",
+        "Base HP": "108",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~7.95"
+    },
+    {
+        "Enemy": "Mechanicus: Frostcaller",
+        "Base HP": "108",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~7.95"
+    },
+    {
+        "Enemy": "Mechanicus: Thunderflash",
+        "Base HP": "108",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~7.95"
+    },
+    {
+        "Enemy": "Mechanicus: Wicked Waves",
+        "Base HP": "108",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~7.95"
+    },
+    {
+        "Enemy": "Mechanicus: Flame of Pancha",
+        "Base HP": "180",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~13.25"
+    },
+    {
+        "Enemy": "Mechanicus: Sharkwinter",
+        "Base HP": "180",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~13.25"
+    },
+    {
+        "Enemy": "Mechanicus: Water Mirror",
+        "Base HP": "180",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "~13.25"
+    },
+    {
+        "Enemy": "Tent Tortoise",
+        "Base HP": "13.584",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1"
+    },
+    {
+        "Enemy": "Preliminary Proliferating Organism",
+        "Base HP": "21.7344",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "1.6"
+    },
+    {
+        "Enemy": "Protective Proliferating Organism",
+        "Base HP": "43.4688",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3.2"
+    },
+    {
+        "Enemy": "Pernicious Proliferating Organism",
+        "Base HP": "27.168",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2"
+    },
+    {
+        "Enemy": "Predatory Proliferating Organism",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.4"
+    },
+    {
+        "Enemy": "Provender Proliferating Organism",
+        "Base HP": "43.4688",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "3.2"
+    },
+    {
+        "Enemy": "Perch Proliferating Organism",
+        "Base HP": "32.6016",
+        "Level MultiplierType": "Type 2",
+        "Base HP Ratioto Hilichurl": "2.4"
+    }
+]
