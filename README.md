@@ -1,8 +1,10 @@
-# Geshin Impact Express
+# Geshin Express
 
 This is Section B `Fantasy Adventures` Theme game.
 
-- [Geshin Impact Express](#geshin-impact-express)
+![dbdiagram](img/db.png)
+
+- [Geshin Express](#geshin-express)
   - [Setup](#setup)
   - [Database Initialization \& Add Data](#database-initialization--add-data)
   - [Endpoints](#endpoints)
