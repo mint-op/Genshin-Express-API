@@ -171,9 +171,9 @@ module.exports.insertUserQuest = (data, callback) => {
 
 module.exports.updateUserQuest = (data, callback) => {
   const sqlstatement = `
-    UPDATE user_quest SET progress = ?, count = ? WHERE user_quest_id = ?;
+    UPDATE user_quest SET progress = ? WHERE user_quest_id = ?;
   `;
-  const VALUES = [data.progress, data.count, data.user_quest_id];
+  const VALUES = [data.progress, data.user_quest_id];
   pool.query(sqlstatement, VALUES, callback);
 };
 

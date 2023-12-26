@@ -71,15 +71,7 @@
       "upgrades": [
         {
           "name": "Tap DMG",
-          "value": "146.4%"
-        },
-        {
-          "name": "Hold DMG",
-          "value": "245.6%"
-        },
-        {
-          "name": "Icewhirl Brand DMG",
-          "value": "96%"
+          "value": "488%"
         },
         {
           "name": "Physical RES Decrease",
@@ -92,18 +84,6 @@
         {
           "name": "Grimheart Duration",
           "value": "18s"
-        },
-        {
-          "name": "Def Bonus Per Stack",
-          "value": "30%"
-        },
-        {
-          "name": "RES Decrease Duration",
-          "value": "7s"
-        },
-        {
-          "name": "Press CD",
-          "value": "4s"
         },
         {
           "name": "Holding CD",
@@ -119,19 +99,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "245.6%"
-        },
-        {
-          "name": "Lighfall Sword Base DMG",
-          "value": "367%"
-        },
-        {
-          "name": "DMG Per Stack",
-          "value": "75%"
-        },
-        {
-          "name": "Maximum Stacks",
-          "value": "30"
+          "value": "2862.6%"
         },
         {
           "name": "CD",

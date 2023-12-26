@@ -70,10 +70,6 @@
           "value": "149.6%"
         },
         {
-          "name": "Vijnana-Khanda Field Duration",
-          "value": "8.0s"
-        },
-        {
           "name": "Vijnana Suffusion Duration",
           "value": "12.0s"
         },
@@ -91,11 +87,7 @@
       "upgrades": [
         {
           "name": "Tanglevine Shaft DMG",
-          "value": "12.0s"
-        },
-        {
-          "name": "Secondary Tanglevine Shaft DMG",
-          "value": "12.0s"
+          "value": "144%"
         },
         {
           "name": "CD",

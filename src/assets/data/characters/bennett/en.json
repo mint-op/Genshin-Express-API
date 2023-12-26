@@ -62,24 +62,12 @@
       "description": "Bennett puts all his fire and passion for adventuring into his sword. Results may very based on how fired up he is.\nPress\nA single, swift flame strike that deals Pyro DMG.\nHold (Short)\nCharges up, resulting in different effects when unleashed based on the Charge Level.\n\nLevel 1: Strikes twice, dealing Pyro DMG and launching enemies.\nLevel 2: Unleashes 3 consecutive attacks that deal impressive Pyro DMG, but the last attack triggers an explosion that launches both Bennett and the enemy.\n\nBennett takes no damage from being launched.",
       "upgrades": [
         {
-          "name": "Press DMG",
-          "value": "138%"
-        },
-        {
-          "name": "Charge Level 1 DMG",
-          "value": "84% + 92%"
-        },
-        {
-          "name": "Charge Level 2 DMG",
-          "value": "88% + 96%"
-        },
-        {
           "name": "Explosion DMG",
-          "value": "132%"
+          "value": "630%"
         },
         {
           "name": "CD",
-          "value": "5 / 7.5 / 10s"
+          "value": "10s"
         }
       ],
       "type": "ELEMENTAL_SKILL"

@@ -63,11 +63,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "130.4%"
-        },
-        {
-          "name": "Transient Blossom DMG",
-          "value": "134% DEF"
+          "value": "134%"
         },
         {
           "name": "Duration",
@@ -88,10 +84,6 @@
         {
           "name": "Elemental Burst DMG",
           "value": "367.2%"
-        },
-        {
-          "name": "Fatal Blossom DMG",
-          "value": "72% each"
         },
         {
           "name": "CD",

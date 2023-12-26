@@ -83,11 +83,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "88%"
-        },
-        {
-          "name": "Fiery Collapse DMG",
-          "value": "58%"
+          "value": "146%"
         },
         {
           "name": "Shield DMG Absorption",
@@ -96,10 +92,6 @@
         {
           "name": "Shield Duration",
           "value": "8s"
-        },
-        {
-          "name": "Scorching Ooyoroi Duration",
-          "value": "15s"
         },
         {
           "name": "CD",

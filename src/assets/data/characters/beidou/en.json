@@ -75,11 +75,7 @@
         },
         {
           "name": "Base DMG",
-          "value": "122%"
-        },
-        {
-          "name": "DMG Bonus on Hit Taken",
-          "value": "160%"
+          "value": "282%"
         },
         {
           "name": "CD",
@@ -95,15 +91,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "122%"
-        },
-        {
-          "name": "Lightning DMG",
-          "value": "96%"
-        },
-        {
-          "name": "DMG Reduction",
-          "value": "20%"
+          "value": "218%"
         },
         {
           "name": "Duration",

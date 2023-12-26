@@ -55,27 +55,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "3.34%"
-        },
-        {
-          "name": "Sword Dance/Whirling Steps 1-Hit DMG",
-          "value": "4.55% / 3.25%"
-        },
-        {
-          "name": "Sword Dance/Whirling Steps 2-Hit DMG",
-          "value": "5.14 / 3.96"
-        },
-        {
-          "name": "Luminous Illusion/Water Wheel DMG",
-          "value": "7.17% / 5.06%"
-        },
-        {
-          "name": "Pirouette Duration",
-          "value": "10s"
-        },
-        {
-          "name": "Lunar Prayer Duration",
-          "value": "8s"
+          "value": "32.47% Max HP"
         },
         {
           "name": "Tranquility Aura Duration",
@@ -95,11 +75,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "18.43%"
-        },
-        {
-          "name": "Lingering Aeon DMG",
-          "value": "22.53%"
+          "value": "40.96% Max HP"
         },
         {
           "name": "CD",

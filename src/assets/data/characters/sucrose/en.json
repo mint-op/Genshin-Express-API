@@ -74,12 +74,8 @@
       "description": "Sucrose hurls an unstable concoction that creates a Large Wind Spirit. While it persists, the Large Wind Spirit will continuously pull and launch nearby enemies, dealing AoE Anemo DMG.\nElemental Absorption\nIf the Wind Spirit comes into contact with Hydro / Pyro / Cryo / Electro elements, it will deal additional DMG of that type.\n\nElemental Absorption may only occur once per use.",
       "upgrades": [
         {
-          "name": "DoT",
-          "value": "148%"
-        },
-        {
-          "name": "Additional Elemental DMG",
-          "value": "44%"
+          "name": "DMG",
+          "value": "192%"
         },
         {
           "name": "Duration",

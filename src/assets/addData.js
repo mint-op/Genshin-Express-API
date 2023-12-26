@@ -48,9 +48,21 @@ const insertSingleWeapon = (data, callback) => {
 
 const insertSingleEntity = (data, callback) => {
   const sqlstatement = `
-  INSERT INTO entities (creature_id, name, description, region, type, family, faction, elements, descriptions, elemental_descriptions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+  INSERT INTO entities (creature_id, name, description, region, type, family, faction, elements, descriptions, elemental_descriptions, exp) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
   `;
-  const VALUES = [data.creature_id, data.name, data.description, data.region, data.type, data.family, data.faction, data.elements, data.descriptions, data.elemental_descriptions];
+  const VALUES = [
+    data.creature_id,
+    data.name,
+    data.description,
+    data.region,
+    data.type,
+    data.family,
+    data.faction,
+    data.elements,
+    data.descriptions,
+    data.elemental_descriptions,
+    data.exp,
+  ];
   pool.query(sqlstatement, VALUES, callback);
 };
 
@@ -181,6 +193,7 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
         elements: JSON.stringify(data.elements),
         descriptions: JSON.stringify(data.descriptions),
         elemental_descriptions: JSON.stringify(data['elemental-descriptions']),
+        exp: data['mora-gained'],
       };
 
       await insertData(temp, insertSingleEntity);

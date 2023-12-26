@@ -78,18 +78,6 @@
       "description": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her.\n\nThe Pyronado will move with your character for so long as the ability persists, dealing Pyro DMG to all enemies in its path.",
       "upgrades": [
         {
-          "name": "1-Hit DMG",
-          "value": "72%"
-        },
-        {
-          "name": "2-Hit DMG",
-          "value": "88%"
-        },
-        {
-          "name": "3-Hit DMG",
-          "value": "110%"
-        },
-        {
           "name": "Pyronado DMG",
           "value": "112%"
         },

@@ -63,15 +63,7 @@
       "upgrades": [
         {
           "name": "Press DMG",
-          "value": "192%"
-        },
-        {
-          "name": "Hold Skill",
-          "value": "261%"
-        },
-        {
-          "name": "Press CD",
-          "value": "6s"
+          "value": "453%"
         },
         {
           "name": "Holding CD",
@@ -87,15 +79,7 @@
       "upgrades": [
         {
           "name": "Slashing DMG",
-          "value": "262%"
-        },
-        {
-          "name": "DoT",
-          "value": "120%"
-        },
-        {
-          "name": "Additional Elemental DMG",
-          "value": "36%"
+          "value": "382%"
         },
         {
           "name": "Duration",

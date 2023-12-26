@@ -63,23 +63,11 @@
       "upgrades": [
         {
           "name": "Rush Attack DMG",
-          "value": "193.6% ATK + 154.88% Elemental Mastery"
+          "value": "348.48%"
         },
         {
           "name": "Projection Attack Interval",
           "value": "1.6s"
-        },
-        {
-          "name": "1-Mirror Projection Attack DMG",
-          "value": "67.2% ATK + 134.4% Elemental Mastery"
-        },
-        {
-          "name": "2-Mirror Projection Attack DMG",
-          "value": "(67.2% ATK + 134.4% Elemental Mastery)×2"
-        },
-        {
-          "name": "3-Mirror Projection Attack DMG",
-          "value": "(67.2% ATK + 134.4% Elemental Mastery)×3"
         },
         {
           "name": "Chisel-Light Mirror Removal Interval",
@@ -99,7 +87,7 @@
       "upgrades": [
         {
           "name": "Single-Instance DMG",
-          "value": "121.6% ATK + 97.28% Elemental Mastery"
+          "value": "218.88%"
         },
         {
           "name": "Basic Attack Instances",

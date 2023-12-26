@@ -27,7 +27,7 @@
         },
         {
           "name": "3-Hit DMG",
-          "value": "48% + 48%"
+          "value": "96%"
         },
         {
           "name": "Charged Attack DMG",
@@ -55,15 +55,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "95%"
-        },
-        {
-          "name": "Normal Attack DMG",
-          "value": "133%"
-        },
-        {
-          "name": "Charged Attack DMG",
-          "value": "126%"
+          "value": "354%"
         },
         {
           "name": "Initial Kuugoryoku Points",
@@ -83,7 +75,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "147% x 5"
+          "value": "735%"
         },
         {
           "name": "CD",

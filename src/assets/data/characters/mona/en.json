@@ -58,12 +58,8 @@
       "description": "Creates an illusory Phantom of fate from coalesced waterspouts.\n\nThe Phantom has the following special properties:\n\nContinuously taunts nearby enemies, attracting their fire.\nContinuously deals Hydro DMG to nearby enemies.\nWhen its duration expires, the Phantom explodes, dealing AoE Hydro DMG.\n\nHold\nUtilizes water currents to move backwards swiftly before conjuring a Phantom.\n\nOnly one Phantom created by Mirror Reflection of Doom can exist at any time.\n",
       "upgrades": [
         {
-          "name": "DoT",
-          "value": "32%"
-        },
-        {
           "name": "Explosion DMG",
-          "value": "133%"
+          "value": "165%"
         },
         {
           "name": "CD",
@@ -77,10 +73,6 @@
       "unlock": "Elemental Burst",
       "description": "Mona summons the sparkling waves and creates a reflection of the starry sky, applying the Illusory Bubble status to opponents in a large AoE.\nIllusory Bubble\nTraps opponents inside a pocket of destiny and also makes them Wet. Renders weaker opponents immobile. When an opponent affected by Illusory Bubble sustains DMG, the following effects are produced:\n\nApplies an Omen to the opponent, which gives a DMG Bonus, also increasing the DMG of the attack that causes it.\nRemoves the Illusory Bubble, dealing Hydro Elemental DMG in the process. The DMG Bonus does not apply to the Hydro Elemental DMG dealt in this instance.\n\nOmen\nDuring its duration, increases DMG taken by enemies.",
       "upgrades": [
-        {
-          "name": "Illusory Bubble Duration",
-          "value": "8s"
-        },
         {
           "name": "Illusory Bubble Explosion DMG",
           "value": "442%"

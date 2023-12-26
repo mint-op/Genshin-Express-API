@@ -79,11 +79,7 @@
       "upgrades": [
         {
           "name": "Cutting DMG",
-          "value": "112%"
-        },
-        {
-          "name": "Bloom DMG",
-          "value": "168%"
+          "value": "280%"
         },
         {
           "name": "Duration",

@@ -75,11 +75,7 @@
       "upgrades": [
         {
           "name": "Explosion DMG",
-          "value": "88.8%"
-        },
-        {
-          "name": "Leap DMG",
-          "value": "115%"
+          "value": "203.8%"
         },
         {
           "name": "Duration",

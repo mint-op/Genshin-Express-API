@@ -1,15 +1,15 @@
 {
   "id": "abyss-herald",
-  "name": "Abyss Heralds",
+  "name": "Abyss Herald",
   "description": "N/A",
   "region": "Global",
-
   "type": "Elite Enemies",
   "family": "The Abyss",
   "faction": "Abyss Order",
-
-  "elements": ["Hydro", "Cryo"],
-
+  "elements": [
+    "Hydro",
+    "Cryo"
+  ],
   "drops": [
     {
       "name": "Dead Ley Line Branch",
@@ -42,7 +42,6 @@
       "minimum-level": 60
     }
   ],
-
   "artifacts": [
     {
       "name": "Blood-Soaked",
@@ -65,7 +64,6 @@
       "rarity": "3"
     }
   ],
-
   "descriptions": [
     {
       "name": "Abyss Herald: Wicked Torrents",
@@ -76,6 +74,5 @@
       "description": "A monster from the Abyss Order that wields frigid, icy blades in battle. Just as there are saints who will spread and glorify the profound gospel, there are envoys who must correct any twisted strains and remove any dissonance. People often say that steel feels like ice as it pierces the body, but this dark frost is said to freeze even the soul."
     }
   ],
-
   "mora-gained": 600
 }

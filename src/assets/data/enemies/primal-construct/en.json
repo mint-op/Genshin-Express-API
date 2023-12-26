@@ -1,15 +1,14 @@
 {
-  "id": "primal-constructs",
-  "name": "Primal Constructs",
+  "id": "primal-construct",
+  "name": "Primal Construct",
   "description": "N/A",
   "region": "Sumeru",
-
   "type": "Elite Enemies",
   "family": "Automatons",
   "faction": "Primal Constructs",
-
-  "elements": ["Dendro"],
-
+  "elements": [
+    "Dendro"
+  ],
   "drops": [
     {
       "name": "Damaged Prism",
@@ -27,7 +26,6 @@
       "minimum-level": 60
     }
   ],
-
   "artifacts": [
     {
       "name": "Blood-Soaked",
@@ -50,7 +48,6 @@
       "rarity": "3"
     }
   ],
-
   "descriptions": [
     {
       "name": "Primal Construct: Prospector",
@@ -65,6 +62,5 @@
       "description": "The guardians of the lost ancient desert ruins have power enough to punish any who would presume to disturb the pure dreams of their lord. The lord of the blazing sun who once ruled this desert once promised his people a utopia on the other side of existence, though it ultimately turned out to be a mirage made of folly. Today, that utopia is long gone, and the dreams and oaths, forgotten by the world, are now only found in the mantras inscribed upon these machines."
     }
   ],
-
   "mora-gained": 200
 }

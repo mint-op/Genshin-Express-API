@@ -63,7 +63,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "58.4% + 136%"
+          "value": "194.4%"
         },
         {
           "name": "CD",
@@ -79,11 +79,7 @@
       "upgrades": [
         {
           "name": "Elemental Burst DMG",
-          "value": "104% + 152%"
-        },
-        {
-          "name": "Ice Lance DoT",
-          "value": "132%"
+          "value": "388%"
         },
         {
           "name": "Duration",

@@ -66,16 +66,8 @@
       "description": "Performs a forward slash that deals Pyro DMG.\nThis skill can be used 3 times consecutively. Enters CD if not cast again within a short period.",
       "upgrades": [
         {
-          "name": "1-Hit DMG",
-          "value": "94.4%"
-        },
-        {
-          "name": "2-Hit DMG",
-          "value": "97.6%"
-        },
-        {
-          "name": "3-Hit DMG",
-          "value": "129%"
+          "name": "DMG",
+          "value": "321%"
         },
         {
           "name": "CD",
@@ -89,14 +81,6 @@
       "unlock": "Elemental Burst",
       "description": "Releases intense flames to knock nearby enemies back, dealing Pyro DMG. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive Pyro DMG to all enemies in its path. The Phoenix explodes upon reaching its destination, causing a large amount of AoE Pyro DMG.\n\nThe searing flames that run down his blade cause Diluc's Normal and Charged Attacks to deal Pyro DMG for a time.",
       "upgrades": [
-        {
-          "name": "Slashing DMG",
-          "value": "204%"
-        },
-        {
-          "name": "DoT",
-          "value": "60%"
-        },
         {
           "name": "Explosion DMG",
           "value": "204%"

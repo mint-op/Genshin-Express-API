@@ -41,6 +41,7 @@ DROP TABLE IF EXISTS user_weapon;
 DROP TABLE IF EXISTS entities;
 DROP TABLE IF EXISTS quests;
 DROP TABLE IF EXISTS user_quest;
+DROP TABLE IF EXISTS combat;
 
 CREATE TABLE userData (
     user_id INT PRIMARY KEY,
@@ -100,7 +101,7 @@ CREATE TABLE user_weapon (
 );
 
 CREATE TABLE entities (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    entity_id INT PRIMARY KEY AUTO_INCREMENT,
     creature_id VARCHAR(50),
     name VARCHAR(50) NOT NULL,
     description TEXT,
@@ -110,7 +111,8 @@ CREATE TABLE entities (
     faction VARCHAR(50),
     elements JSON NOT NULL,
     descriptions JSON,
-    elemental_descriptions JSON
+    elemental_descriptions JSON,
+    exp VARCHAR(50)
 );
 
 CREATE TABLE quests (
@@ -127,8 +129,16 @@ CREATE TABLE user_quest (
     user_quest_id INT PRIMARY KEY AUTO_INCREMENT,
     quest_id INT NOT NULL,
     user_id INT NOT NULL,
-    count INT NOT NULL DEFAULT 0,
-    progress ENUM ('completed', 'inprogress', 'failed') NOT NULL
+    progress ENUM ('completed', 'inprogress') NOT NULL
+);
+
+CREATE TABLE combat (
+    combat_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    entity_id INT NOT NULL,
+    start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    end_time TIMESTAMP,
+    outcome ENUM ('victory', 'defeat')
 );
 
 `;

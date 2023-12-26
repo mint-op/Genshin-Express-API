@@ -59,15 +59,11 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "75.7%"
+          "value": "100.9%"
         },
         {
           "name": "Grass Ring of Sanctification Healing",
           "value": "3% Max HP+289"
-        },
-        {
-          "name": "Grass Ring of Sanctification DMG",
-          "value": "25.2%"
         },
         {
           "name": "Activation Cost",
@@ -90,16 +86,12 @@
       "description": "Stabs an evil-excoriating blade into the ground, creating a field that cleanses the area of all that is foul, dealing continuous Electro DMG to opponents within its AoE based on Shinobu's Max HP.\nIf Shinobu's HP is less than or equal to 50% when this skill is used, the field will last longer.",
       "upgrades": [
         {
-          "name": "Single Instance DMG",
-          "value": "3.6% Max HP"
-        },
-        {
           "name": "Total DMG",
-          "value": "25.2%/43.3% Max HP"
+          "value": "72.1% Max HP"
         },
         {
           "name": "Duration",
-          "value": "2s/3.5s"
+          "value": "3.5s"
         },
         {
           "name": "CD",

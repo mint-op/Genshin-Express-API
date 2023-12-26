@@ -83,10 +83,6 @@
       "description": "Fires of a shower of arrows, dealing continuous AoE Pyro DMG.",
       "upgrades": [
         {
-          "name": "Fiery Rain DMG Per Wave",
-          "value": "28.1%"
-        },
-        {
           "name": "Total Fiery Rain DMG",
           "value": "505%"
         },

@@ -16,6 +16,7 @@ module.exports.gachaSingle = async (req, res, next) => {
 
     const userData = await getUserData;
 
+    // Prepare the data object for gacha
     var data = {
       user_id: userId,
       counter4: userData[0].counter4,
@@ -25,10 +26,13 @@ module.exports.gachaSingle = async (req, res, next) => {
     if (userData[0].primogems < 160) {
       res.status(404).json({ message: 'Not enough primogems!' });
     } else {
+      // Deduct the primogems and update the data object
       data = { ...data, primogems: userData[0].primogems - 160 };
 
+      // Perform the gacha and get the result
       let drop = (await require('../utils/gacha').gacha(data)).single();
 
+      // Update the counter values in the data object
       const counter = drop.splice(drop.length - 1, 1)[0];
       // * Update Counter Values to data object
       data['counter5'] = counter[0];
@@ -38,9 +42,11 @@ module.exports.gachaSingle = async (req, res, next) => {
         if (errors) console.error(errors);
       };
 
+      // Update the user's primogems and pity counter in the database
       model.updatePrimogems(data, callback);
       model.updatePityCounter(data, callback);
 
+      // Set the result in the response.locals
       res.locals.result = { userData: userData[0], results: drop, primogems: data.primogems, refunds: 0 };
       next();
     }
@@ -51,8 +57,10 @@ module.exports.gachaMulti = async (req, res, next) => {
   const { userId } = require('./loginController');
 
   if (!userId) {
+    // Return an error message if the user is not logged in
     res.status(404).json({ message: 'Login Required!' });
   } else {
+    // Get user data from the database
     const getUserData = new Promise((resolve, reject) => {
       model.selectUserById(userId, (errors, results, fields) => {
         if (errors) reject(errors);
@@ -62,6 +70,7 @@ module.exports.gachaMulti = async (req, res, next) => {
 
     const userData = await getUserData;
 
+    // Prepare the data object
     var data = {
       user_id: userId,
       counter4: userData[0].counter4,
@@ -69,14 +78,19 @@ module.exports.gachaMulti = async (req, res, next) => {
     };
 
     if (userData[0].primogems < 1600) {
+      // Return an error message if the user does not have enough primogems
       res.status(404).json({ message: 'Not enough primogems!' });
     } else {
+      // Update the data object with the new primogems value
       data = { ...data, primogems: userData[0].primogems - 1600 };
 
+      // Perform the gacha and get the results
       let drop = (await require('../utils/gacha').gacha(data)).multi();
 
+      // Extract the counter values from the drop array
       const counter = drop.splice(drop.length - 1, 1)[0];
-      // * Update counter values to data object
+
+      // Update the counter values in the data object
       data['counter5'] = counter[0];
       data['counter4'] = counter[1];
 
@@ -84,9 +98,11 @@ module.exports.gachaMulti = async (req, res, next) => {
         if (errors) console.error(errors);
       };
 
+      // Update the primogems and pity counter values in the database
       model.updatePrimogems(data, callback);
       model.updatePityCounter(data, callback);
 
+      // Set the response locals with the necessary data
       res.locals.result = { userData: userData[0], results: drop, primogems: data.primogems, refunds: 0 };
       next();
     }
@@ -94,38 +110,49 @@ module.exports.gachaMulti = async (req, res, next) => {
 };
 
 module.exports.insertGachaResult = (req, res, next) => {
+  // Extract necessary data from res.locals.result
   const { userData, results } = res.locals.result;
+
+  // Import required module
   const { readJSON } = require('../assets/queryDist');
 
+  // Prepare the character object with user_id
   var charObj = {
     user_id: userData.user_id,
   };
 
+  // Iterate over each result
   results.forEach((item) => {
+    // Prepare the weapon object with weapon_id and totalAttack
     var weapObj = {
       weapon_id: item.weapon_id,
       totalAttack: item.baseAttack,
     };
 
+    // Check if the item is a character or a weapon
     const isChar = item.character_id != undefined;
+
     if (isChar) {
-      // Check if character already exists
+      // Check if character already exists for the user
       const char = new Promise((resolve, reject) => {
         const callback = (errors, results, fields) => {
           if (errors) reject(errors);
           else resolve(results);
         };
-
+        // Query the database to get user's characters
         model.selectUserCharacterById(userData.user_id, callback);
       });
 
+      // Process the character if it already exists
       char.then((results) => {
         const uchar = results.find((f) => f.character_id == item.character_id);
         if (uchar) {
+          // Define the character level multiplier and rarity mapping
           const multiplier = readJSON('character-level-multiplier.json');
           const rarity = { 5: '5-Star', 4: '4-Star' };
 
           if (uchar.level != 90) {
+            // Increment the level and calculate new stats
             const temp = {
               level: uchar.level + 1,
               health: uchar.health * multiplier[uchar.level][rarity[item.rarity]],
@@ -134,20 +161,25 @@ module.exports.insertGachaResult = (req, res, next) => {
               character_id: item.character_id,
             };
 
-            // console.log(temp); // For Debuging
-            // console.log(multiplier[uchar.level]); // For Debuging
+            /** 
+            console.log(temp); // For Debuging
+            console.log(multiplier[uchar.level]); // For Debuging
+            */
 
+            // Update the character in the database
             const callback = (errors, results, fields) => {
               if (errors) console.error(errors);
             };
-
             model.updateUserCharacterById(temp, callback);
           } else {
+            // Add refund amount if character is already at max level
             res.locals.result['refunds'] += 160;
           }
         } else {
+          // Fetch character data
           const charData = readJSON('character-values.json').find((f) => f.Character == item.name);
 
+          // Update the character object with new values
           charObj = {
             ...charObj,
             health: parseFloat(charData.HP),
@@ -156,28 +188,27 @@ module.exports.insertGachaResult = (req, res, next) => {
           };
           weapObj = { character_id: item.character_id, ...weapObj };
 
+          // Insert new character and weapon into the database
           const callback_weap = (errors, results, fields) => {
             if (errors) console.error(errors);
             else {
               const callback_char = (errors, results, fields) => {
                 if (errors) console.error(errors);
               };
-
               model.insertNewUserCharacter({ ...charObj, ...weapObj, user_weapon_id: results.insertId }, callback_char);
             }
           };
-
           model.insertNewUserWeapon({ ...charObj, ...weapObj }, callback_weap);
         }
       });
     } else {
-      // Check if weapon already exists
+      // Check if weapon already exists for the user
       const weap = new Promise((resolve, reject) => {
         const callback = (errors, results, fields) => {
           if (errors) reject(errors);
           else resolve(results);
         };
-
+        // Query the database to get user's weapons
         model.selectUserWeaponById(userData.user_id, callback);
       });
 
@@ -195,13 +226,14 @@ module.exports.insertGachaResult = (req, res, next) => {
               weapon_id: item.weapon_id,
             };
 
-            // console.log(temp); // For Debuging
-            // console.log(multiplier[uweap.level]); // For Debuging
+            /** 
+            console.log(temp); // For Debuging
+            console.log(multiplier[uweap.level]); // For Debuging
+            */
 
             const callback = (errors, results, fields) => {
               if (errors) console.error(errors);
             };
-
             model.updateUserWeaponById(temp, callback);
           } else {
             res.locals.result['refunds'] += 160;
@@ -212,7 +244,6 @@ module.exports.insertGachaResult = (req, res, next) => {
           const callback = (errors, results, fields) => {
             if (errors) console.error(errors);
           };
-
           model.insertNewUserWeapon({ ...charObj, ...weapObj }, callback);
         }
         next();
@@ -554,5 +585,70 @@ module.exports.upgradeWeap = async (req, res, next) => {
         res.status(200).json([results, { remaining_primogems: userData[0].primogems - 160 }]);
       } else res.status(404).json({ message: 'Weapon Id does not belong to this user!' });
     }
+  }
+};
+
+module.exports.showAllEntities = async (req, res, next) => {
+  const { userId } = require('./loginController');
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const results = (await require('../utils/combat').combat(userData[0].user_id)).showAllEntities();
+
+    res.status(200).json(results);
+  }
+};
+
+module.exports.selectEntityByIndex = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { idx } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const results = (await require('../utils/combat').combat(userData[0].user_id)).selectEntity(idx);
+
+    res.status(200).json(results);
+  }
+};
+
+module.exports.attackEntity = async (req, res, next) => {
+  const { userId } = require('./loginController');
+  const { partyIdx } = req.params;
+
+  if (!userId) {
+    res.status(404).json({ message: 'Login Required!' });
+  } else {
+    const getUserData = new Promise((resolve, reject) => {
+      model.selectUserById(userId, (errors, results, fields) => {
+        if (errors) reject(errors);
+        else resolve(results);
+      });
+    });
+
+    const userData = await getUserData;
+
+    const results = await (await require('../utils/combat').combat(userData[0].user_id)).action(partyIdx);
+
+    res.status(200).json(results);
   }
 };

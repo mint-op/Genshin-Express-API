@@ -59,11 +59,7 @@
       "upgrades": [
         {
           "name": "Skill DMG ",
-          "value": "148.8%"
-        },
-        {
-          "name": "Pressurized Collapse Vortex DMG",
-          "value": "108%"
+          "value": "256.8%"
         },
         {
           "name": "Manifest Gale Duration",
@@ -86,24 +82,12 @@
           "value": "377.6%"
         },
         {
-          "name": "Anemo DMG Bonus",
-          "value": "18"
-        },
-        {
-          "name": "Prayerful Wind's Benefit Duration",
-          "value": "4s"
-        },
-        {
           "name": "Anemo RES Decrease",
           "value": "30"
         },
         {
           "name": "Perfidious Wind's Bale Duration",
           "value": "4s"
-        },
-        {
-          "name": "Duration",
-          "value": "12s"
         },
         {
           "name": "CD",

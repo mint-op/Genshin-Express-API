@@ -4,12 +4,11 @@
   "title": "The True Ruler of Dragonspine?",
   "description": "N/A",
   "region": "Dragonspine",
-
   "type": "Elite Enemies",
   "family": "Unique Enemies",
-
-  "elements": [],
-
+  "elements": [
+    "N/A"
+  ],
   "drops": [
     {
       "name": "Chilled Meat",
@@ -17,6 +16,5 @@
       "minimum-level": 1
     }
   ],
-
   "mora-gained": "None"
 }

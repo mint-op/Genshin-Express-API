@@ -59,26 +59,6 @@
       "upgrades": [
         {
           "name": "Press DMG",
-          "value": "80%"
-        },
-        {
-          "name": "Press CD",
-          "value": "1s"
-        },
-        {
-          "name": "Non-Conductive Hold DMG",
-          "value": "320%"
-        },
-        {
-          "name": "Stack 1 Conductive Hold DMG",
-          "value": "368%"
-        },
-        {
-          "name": "Stack 2 Conductive Hold DMG",
-          "value": "424%"
-        },
-        {
-          "name": "Stack 3 Conductive Hold DMG",
           "value": "487%"
         },
         {
