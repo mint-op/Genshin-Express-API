@@ -1,12 +1,10 @@
 {
   "id": "large-slime",
-  "name": "Large Slimes",
+  "name": "Large Slime",
   "region": "Global",
   "description": "A pudgy elemental life form. It's said that desserts made from slimes of different elements will have incredibly distinctive flavors.",
-
   "type": "Common Enemies",
   "family": "Slime",
-
   "elements": [
     "Anemo",
     "Geo",
@@ -17,7 +15,6 @@
     "Pyro",
     "Electro"
   ],
-
   "drops": [
     {
       "name": "Slime Condensate",
@@ -35,7 +32,6 @@
       "minimum-level": 60
     }
   ],
-
   "elemental-descriptions": [
     {
       "element": "Anemo",

@@ -78,36 +78,8 @@
       "description": "Unleashes a set of weaponry made of pure water, dealing Hydro DMG to surrounding opponents and entering a Melee Stance.\nIn this Stance, Tartaglia's Normal and Charged Attacks change as follows:\nNormal Attack\nPerforms up to 6 consecutive Hydro strikes.\nCharged Attack\nConsumes a certain amount of Stamina to unleash a cross slash, dealing Hydro DMG.\nRiptide Slash\nHitting an opponent affected by Riptide with a melee attack unleashes a Riptide Slash that deals AoE Hydro DMG. DMG dealt in this way is considered Elemental Skill DMG, and can only occur once every 1.5s.\nAfter 30s, or when the ability is unleashed again, this skill will end. Tartaglia will return to his Ranged Stance and this ability will enter CD. The longer Tartaglia stays in his Melee Stance, the longer the CD.\nIf the return to a ranged stance occurs automatically after 30s, the CD is even longer.",
       "upgrades": [
         {
-          "name": "Stance Change DMG",
-          "value": "72%"
-        },
-        {
-          "name": "1-Hit DMG",
-          "value": "38.9%"
-        },
-        {
-          "name": "2-Hit DMG",
-          "value": "41.6%"
-        },
-        {
-          "name": "3-Hit DMG",
-          "value": "56.3%"
-        },
-        {
-          "name": "4-Hit DMG",
-          "value": "59.9%"
-        },
-        {
-          "name": "5-Hit DMG",
-          "value": "55.3%"
-        },
-        {
-          "name": "6-Hit DMG",
-          "value": "35.4% + 37.7%"
-        },
-        {
           "name": "Charged Attack DMG",
-          "value": "60.2% + 72%"
+          "value": "397.1%"
         },
         {
           "name": "Charged Attack Stamina Cost",
@@ -119,11 +91,11 @@
         },
         {
           "name": "Max Duration",
-          "value": "30s"
+          "value": "10s"
         },
         {
-          "name": "Preemptive CD",
-          "value": "6 - 36s"
+          "name": "CD",
+          "value": "6s"
         },
         {
           "name": "Max CD",
@@ -138,16 +110,8 @@
       "description": "Performs different attacks based on what stance Tartaglia is in when casting.\nRanged Stance: Flash of Havoc\nSwiftly fires a Hydro-imbued magic arrow, dealing AoE Hydro DMG and applying the Riptide status.\nReturns a portion of its Energy Cost after use.\nMelee Stance: Light Obliteration\nPerforms a slash with a large AoE, dealing massive Hydro DMG to all surrounding opponents, which triggers Riptide Blast.\nRiptide Blast\nWhen the obliterating waters hit an opponent affected by Riptide, it clears their Riptide status and triggers a Hydro Explosion that deals AoE Hydro DMG.\nDMG dealt in this way is considered Elemental Burst DMG.",
       "upgrades": [
         {
-          "name": "Skill DMG: Melee",
-          "value": "464%"
-        },
-        {
-          "name": "Skill DMG: Ranged",
-          "value": "378%"
-        },
-        {
           "name": "Riptide Blast DMG",
-          "value": "120%"
+          "value": "962%"
         },
         {
           "name": "Energy Return (Ranged)",

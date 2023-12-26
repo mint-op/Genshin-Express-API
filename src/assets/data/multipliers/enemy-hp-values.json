@@ -6,13 +6,13 @@
         "Base HP Ratioto Hilichurl": "0.5"
     },
     {
-        "Enemy": "Slime (Small)",
+        "Enemy": "Slime",
         "Base HP": "10.8672",
         "Level MultiplierType": "Type 1",
         "Base HP Ratioto Hilichurl": "0.8"
     },
     {
-        "Enemy": "Slime (Large)",
+        "Enemy": "Large Slime",
         "Base HP": "27.168",
         "Level MultiplierType": "Type 1",
         "Base HP Ratioto Hilichurl": "2"
@@ -24,7 +24,7 @@
         "Base HP Ratioto Hilichurl": "3"
     },
     {
-        "Enemy": "Hilichurls (Except Cryo Grenadier)",
+        "Enemy": "Hilichurl (Except Cryo Grenadier)",
         "Base HP": "13.584",
         "Level MultiplierType": "Type 1",
         "Base HP Ratioto Hilichurl": "1"
@@ -186,7 +186,7 @@
         "Base HP Ratioto Hilichurl": "2.8"
     },
     {
-        "Enemy": "The Eremites (Most)",
+        "Enemy": "The Eremite (Most)",
         "Base HP": "21.7344",
         "Level MultiplierType": "Type 2",
         "Base HP Ratioto Hilichurl": "1.6"
@@ -414,7 +414,7 @@
         "Base HP Ratioto Hilichurl": "5"
     },
     {
-        "Enemy": "Fatui Pyro Agent",
+        "Enemy": "Fatui Agent",
         "Base HP": "67.92",
         "Level MultiplierType": "Type 1",
         "Base HP Ratioto Hilichurl": "5"

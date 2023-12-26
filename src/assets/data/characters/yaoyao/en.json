@@ -70,10 +70,6 @@
           "value": "10s"
         },
         {
-          "name": "Radish Duration",
-          "value": "5s"
-        },
-        {
           "name": "CD",
           "value": "15s"
         }
@@ -88,10 +84,6 @@
         {
           "name": "Skill DMG",
           "value": "114.56%"
-        },
-        {
-          "name": "Radish DMG",
-          "value": "72.16%"
         },
         {
           "name": "HP Regeneration",

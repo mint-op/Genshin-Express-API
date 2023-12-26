@@ -78,10 +78,6 @@
           "value": "21.3% DEF + 103"
         },
         {
-          "name": "Healing Triggering Chance",
-          "value": "50%"
-        },
-        {
           "name": "Duration",
           "value": "12s"
         },
@@ -99,11 +95,7 @@
       "upgrades": [
         {
           "name": "Elemental Burst DMG",
-          "value": "67.2%"
-        },
-        {
-          "name": "Skill DMG",
-          "value": "92.8%"
+          "value": "160%"
         },
         {
           "name": "ATK Bonus",

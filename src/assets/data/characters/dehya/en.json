@@ -62,16 +62,8 @@
       "description": "This art of Dehya's own invention changes its method of use depending on the combat situation.\nIndomitable Flame\nThis skill will be unleashed should there be no Fiery Sanctum field created by Dehya herself present at the time.\nDeals AoE Pyro DMG, and creates a field known as Fiery Sanctum.\nRanging Flame\nThis skill will be unleashed should a Fiery Sanctum field created by Dehya herself already exist.\nDehya will perform a leaping attack, dealing AoE Pyro DMG before recreating a Fiery Sanctum field at her new position.\nA Fiery Sanctum field created this way will inherit the remaining duration of the previous field.\nRanging Flame can be used only once throughout a single Fiery Sanctum field's duration.\nFiery Sanctum\nWhen an opponent within a Fiery Sanctum field takes DMG, the field will unleash a coordinated attack, dealing AoE Pyro DMG to them based on Dehya's ATK and Max HP. This effect can be triggered once every 2.5s.\nActive characters within this field have their resistance to interruption increased, and when such characters take DMG, a portion of that damage will be mitigated and flow into Redmane's Blood. Dehya will then take this DMG over 10s. When the mitigated DMG stored by Redmane's Blood reaches or goes over a certain percentage of Dehya's Max HP, she will stop mitigating DMG in this way.\nOnly 1 Fiery Sanctum created by Dehya herself can exist at the same time.",
       "upgrades": [
         {
-          "name": "Indomitable Flame DMG",
-          "value": "112.88%"
-        },
-        {
           "name": "Ranging Flame DMG",
-          "value": "132.8%"
-        },
-        {
-          "name": "Field DMG",
-          "value": "60.2 ATK + 1.03 Max HP"
+          "value": "245.68%"
         },
         {
           "name": "Tri-Karma Purification Trigger Interval",
@@ -103,11 +95,7 @@
       "upgrades": [
         {
           "name": "Flame Mabe's Fist DMG'",
-          "value": "98.7 ATK + 1.69 Max HP"
-        },
-        {
-          "name": "Incineration Drive DMG",
-          "value": "139.3 ATK + 2.39 Max HP"
+          "value": "242.08%"
         },
         {
           "name": "Duration",

@@ -41,6 +41,7 @@ DROP TABLE IF EXISTS user_weapon;
 DROP TABLE IF EXISTS entities;
 DROP TABLE IF EXISTS quests;
 DROP TABLE IF EXISTS user_quest;
+DROP TABLE IF EXISTS combat;
 
 CREATE TABLE userData (
     user_id INT PRIMARY KEY,
@@ -128,29 +129,16 @@ CREATE TABLE user_quest (
     user_quest_id INT PRIMARY KEY AUTO_INCREMENT,
     quest_id INT NOT NULL,
     user_id INT NOT NULL,
-    count INT NOT NULL DEFAULT 0,
-    progress ENUM ('completed', 'inprogress', 'failed') NOT NULL
+    progress ENUM ('completed', 'inprogress') NOT NULL
 );
 
 CREATE TABLE combat (
     combat_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT NOT NULL,
-    user_character_id JSON NOT NULL,
     entity_id INT NOT NULL,
     start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     end_time TIMESTAMP,
     outcome ENUM ('victory', 'defeat')
-);
-
-CREATE TABLE combatlog (
-    combatlog_id INT PRIMARY KEY AUTO_INCREMENT,
-    combat_id INT NOT NULL,
-    user_character_id INT NOT NULL,
-    user_character_action JSON NOT NULL,
-    user_character_health FLOAT NOT NULL,
-    entity_health FLOAT NOT NULL,
-    elemental_interaction ENUM ('neutral', 'immune', 'effective'),
-    combat_status ENUM ('active', 'defeated')
 );
 
 `;

@@ -60,24 +60,12 @@
       "description": "Grasping the wind's might, you form a vortex of vacuum in your palm, causing Anemo DMG 6 times in 1.5 seconds to opponents in front of you. The vacuum vortex explodes when the skill duration ends, causing a greater amount of Anemo DMG over a larger area.\nHold\nDMG and AoE will gradually increase.\nElemental Absorption\nIf the vortex comes into contact with Hydro/Pyro/Cryo/Electro elements, it will deal 23% additional elemental DMG of that type. Elemental Absorption may only occur once per use.\nGenerate 2 elemental particles when press and 3.5 when hold, if it hit at least 1 target.",
       "upgrades": [
         {
-          "name": "Initial Cutting DMG% (x2)",
-          "value": "12%"
-        },
-        {
-          "name": "Max Cutting DMG% (x4)",
-          "value": "16.8%"
-        },
-        {
-          "name": "Initial Storm DMG%",
-          "value": "176%"
-        },
-        {
-          "name": "Max Storm DMG%",
-          "value": "192%"
+          "name": "Max Storm DMG",
+          "value": "459.2%"
         },
         {
           "name": "CD",
-          "value": "5 / 8s"
+          "value": "8s"
         }
       ],
       "type": "ELEMENTAL_SKILL"
@@ -88,12 +76,8 @@
       "description": "Guiding the path of the wind currents, you summon a forward-moving tornado that pulls objects and opponents towards itself, dealing Anemo DMG each 0.5 seconds, 9 times.\nElemental Absorption\nIf the vortex comes into contact with Hydro/Pyro/Cryo/Electro elements, it will deal 30.7% additional elemental DMG of that type. Elemental Absorption may only occur once per use.",
       "upgrades": [
         {
-          "name": "Tornado DMG% (x9)",
-          "value": "80.8%"
-        },
-        {
-          "name": "Additional Elemental DMG%",
-          "value": "24.8%"
+          "name": "Tornado DMG (x9)",
+          "value": "727.2%"
         },
         {
           "name": "Duration",

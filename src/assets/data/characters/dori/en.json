@@ -63,15 +63,7 @@
       "upgrades": [
         {
           "name": "Troubleshooter Shot DMG",
-          "value": "147.3%"
-        },
-        {
-          "name": "After-Sales Service Round DMG",
-          "value": "31.6%"
-        },
-        {
-          "name": "3-Hit DMG",
-          "value": "9.0s"
+          "value": "178.9%"
         }
       ],
       "type": "ELEMENTAL_SKILL"
@@ -88,10 +80,6 @@
         {
           "name": "Continuous Healing",
           "value": "6.7% Max HP+642"
-        },
-        {
-          "name": "Energy Regeneration",
-          "value": "1.6"
         },
         {
           "name": "Duration",

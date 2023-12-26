@@ -67,11 +67,11 @@
         },
         {
           "name": "Regeneration on Hit",
-          "value": "10.56% atk + 67"
+          "value": "10.56%"
         },
         {
           "name": "Continuous Regeneration",
-          "value": "69.60% atk + 451"
+          "value": "69.60%"
         },
         {
           "name": "Herald of Frost DMG",

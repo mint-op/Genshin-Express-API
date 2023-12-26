@@ -59,15 +59,7 @@
       "upgrades": [
         {
           "name": "Press DMG",
-          "value": "98%"
-        },
-        {
-          "name": "Hold DMG",
-          "value": "130%"
-        },
-        {
-          "name": "Tri-Karma Purification DMG (% ATK + % Elemental Mastery)",
-          "value": "103.2 + 206.4"
+          "value": "537.6%"
         },
         {
           "name": "Tri-Karma Purification Trigger Interval",
@@ -76,10 +68,6 @@
         {
           "name": "Seed of Skandha Duration",
           "value": "25s"
-        },
-        {
-          "name": "Press CD",
-          "value": "5s"
         },
         {
           "name": "Hold CD",
@@ -93,6 +81,10 @@
       "unlock": "Elemental Burst",
       "description": "Manifests the Court of Dreams and expands the Shrine of Maya.\nWhen the Shrine of Maya field is unleashed, the following effects will be separately unleashed based on the Elemental Types present within the party.\nPyro: While Nahida remains within the Shrine of Maya, the DMG dealt by Tri-Karma Purification from \"All Schemes to Know\" is increased.\nElectro: While Nahida remains within the Shrine of Maya, the interval between each Tri-Karma Purification from \"All Schemes to Know\" is decreased.\nHydro: The Shrine of Maya's duration is increased.\nIf there are at least 2 party members of the aforementioned Elemental Types present when the field is deployed, the aforementioned effects will be increased further.\nEven if Nahida is not on the field, these bonuses will still take effect so long as party members are within the Shrine of Maya.",
       "upgrades": [
+        {
+          "name": "Press DMG",
+          "value": "537.6%"
+        },
         {
           "name": "Base Duration",
           "value": "15s"

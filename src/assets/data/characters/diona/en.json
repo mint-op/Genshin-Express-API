@@ -63,7 +63,7 @@
       "upgrades": [
         {
           "name": "Icy Paw DMG",
-          "value": "41.9% per paw"
+          "value": "41.9%"
         },
         {
           "name": "Base Shield DMG Absorption",
@@ -71,15 +71,11 @@
         },
         {
           "name": "Duration",
-          "value": "1.8s per claw"
+          "value": "1.8s"
         },
         {
           "name": "Press CD",
           "value": "6s"
-        },
-        {
-          "name": "Holding CD",
-          "value": "15s"
         }
       ],
       "type": "ELEMENTAL_SKILL"
@@ -91,11 +87,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "80%"
-        },
-        {
-          "name": "Continuous Field DMG",
-          "value": "52.6%"
+          "value": "132.6%"
         },
         {
           "name": "HP Regeneration Over Time",

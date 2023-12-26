@@ -16,6 +16,7 @@ router.get('/inventory/characters', controller.inventoryChars);
 router.get('/inventory/characters/:uchar_id', controller.inventoryChar);
 // (Character Upgrade)
 router.get('/inventory/characters/upgrade/:uchar_id', controller.upgradeChar);
+
 router.get('/inventory/weapons', controller.inventoryWeaps);
 router.get('/inventory/weapons/:uweap_id', controller.inventoryWeap);
 // (Weapon Upgrade)
@@ -35,7 +36,7 @@ router.get('/party/replace/:uchar_id/:uweap_id', controller.updateWeaponForParty
 
 // Combat Route
 router.get('/combat/list', controller.showAllEntities);
-router.get('/combat/attack/:idx', controller.selectEntityByIndex);
-router.get('/combat/attack/:partyIdx/:skillIdx', controller.attackEntity);
+router.get('/combat/select/:idx', controller.selectEntityByIndex);
+router.get('/combat/attack/:partyIdx', controller.attackEntity);
 
 module.exports = router;

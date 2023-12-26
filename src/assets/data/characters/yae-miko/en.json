@@ -54,18 +54,6 @@
       "description": "To Yae, such dull tasks as can be accomplished by driving spirits out need not be done personally.\nMoves swiftly, leaving a Sesshou Sakura behind.\nSesshou Sakura Has the following properties:\nPeriodically strikes one nearby opponent with lightning, dealing Electro DMG.\nWhen there are other Sesshou Sakura nearby, their level will increase, boosting the DMG dealt by these lightning strikes.\nThis skill has three charges.\n A maximum of 3 Sesshou Sakura can exist simultaneously. The initial level of each Sesshou Sakura is 1, and the initial highest level each sakura can reach is 3. If a new Sesshou Sakura is created too close to an existing one, the existing one will be destroyed.",
       "upgrades": [
         {
-          "name": "Level 1 DMG",
-          "value": "61%"
-        },
-        {
-          "name": "Level 2 DMG",
-          "value": "76%"
-        },
-        {
-          "name": "Level 3 DMG",
-          "value": "95%"
-        },
-        {
           "name": "Level 4 DMG",
           "value": "119%"
         },
@@ -85,10 +73,6 @@
       "unlock": "Elemental Burst",
       "description": "Legends of 'kitsunetsuki,' or the manifestation of a kitsune's might, are common in Inazuma's folktales. One that particularly captures the imagination is that of the Sky Kitsune, said to cause lightning to fall down upon the foes of the Grand Narukami Shrine. Summons a lightning strike, dealing AoE Electro DMG.  When she uses this skill, Yae Miko will unseal nearby Sesshou Sakura, destroying their outer forms and transforming them into Tenko Thunderbolts that descend from the skies, dealing AoE Electro DMG. Each Sesshou Sakura destroyed in this way will create one Tenko Thunderbolt.",
       "upgrades": [
-        {
-          "name": "Skill DMG",
-          "value": "260%"
-        },
         {
           "name": "Tenko Thunderbolt DMG",
           "value": "334%"

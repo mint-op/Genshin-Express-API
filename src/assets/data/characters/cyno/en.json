@@ -55,11 +55,7 @@
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "130.4%"
-        },
-        {
-          "name": "Mortuary Rite DMG",
-          "value": "156.8%"
+          "value": "287.2%"
         },
         {
           "name": "Pactsworn Pathclearer Duration Bonus",
@@ -68,10 +64,6 @@
         {
           "name": "CD",
           "value": "7.5s"
-        },
-        {
-          "name": "Mortuary Rite CD",
-          "value": "3s"
         }
       ],
       "type": "ELEMENTAL_SKILL"
@@ -82,40 +74,8 @@
       "description": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer.\nPactsworn Pathclearer\nCyno's Normal, Charged, and Plunging Attacks will be converted to Electro DMG that cannot be overridden. Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG. This effect will be canceled when Cyno leaves the field and lasts a maximum of 18s.",
       "upgrades": [
         {
-          "name": "1-Hit DMG",
-          "value": "78.3%"
-        },
-        {
-          "name": "2-Hit DMG",
-          "value": "82.5%"
-        },
-        {
-          "name": "3-Hit DMG",
-          "value": "104.6%"
-        },
-        {
-          "name": "4-Hit DMG",
-          "value": "51.7% + 51.7%"
-        },
-        {
-          "name": "5-Hit DMG",
-          "value": "130.8%"
-        },
-        {
           "name": "Charged Attack DMG",
-          "value": "101.1%"
-        },
-        {
-          "name": "Plunge DMG",
-          "value": "63.9%"
-        },
-        {
-          "name": "Low / High Plunge DMG",
-          "value": "127.8% / 159.7%"
-        },
-        {
-          "name": "Elemental Mastery Bonus",
-          "value": "100"
+          "value": "354.4%"
         },
         {
           "name": "Basic Duration",

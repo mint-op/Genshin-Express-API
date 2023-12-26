@@ -54,12 +54,8 @@
       "description": "Jumpy Dumpty is tons of boom-bang-fun!\n\nWhen thrown, Jumpy Dumpty bounces thrice, igniting and dealing AoE Pyro DMG with every bounce.\nOn the third bounce, the bomb splits into many mines.\n\nThe mines will explode upon contact with enemies, or after a short period of time, dealing AoE Pyro DMG.\nStarts with 2 charges.",
       "upgrades": [
         {
-          "name": "Jumpy Dumpty DMG",
-          "value": "95%"
-        },
-        {
           "name": "Mine DMG",
-          "value": "33%"
+          "value": "128%"
         },
         {
           "name": "Mine Duration",

@@ -1,27 +1,27 @@
 {
-  "id": "ruin-hunter",
-  "name": "Ruin Hunter",
-  "description": "Humanoid war machines armed with sharp appendages. They can also fire barrages of missiles.",
+  "id": "ruin-defender",
+  "name": "Ruin Defender",
+  "description": "Various bizarrely-shaped machines that have taken different forms and functions to adapt to different goals. Legend has it that they are war machines left behind by a nation that has already been destroyed. Compared to the more common Ruin Guards, their design has greater value in the study of biomimesis. The insect-like limbs are more agile than humanoid machines. The shield formed by its various components can resist any frontal attack.",
   "region": "Global",
   "type": "Elite Enemies",
   "family": "Automatons",
-  "faction": "Humanoid Ruin Machines",
+  "faction": "Ruin Sentinels",
   "elements": [
-    "Pyro"
+    "N/A"
   ],
   "drops": [
     {
-      "name": "Chaos Device",
+      "name": "Chaos Gear",
       "rarity": 2,
       "minimum-level": 1
     },
     {
-      "name": "Chaos Circuit",
+      "name": "Chaos Axis",
       "rarity": 3,
       "minimum-level": 40
     },
     {
-      "name": "Chaos Core",
+      "name": "Chaos Oculus",
       "rarity": 4,
       "minimum-level": 60
     }

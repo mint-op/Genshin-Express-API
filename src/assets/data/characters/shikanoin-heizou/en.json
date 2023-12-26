@@ -66,16 +66,8 @@
           "value": "227.5%"
         },
         {
-          "name": "Declension DMG Bonus",
-          "value": "56.9%/stack"
-        },
-        {
-          "name": "Conviction DMG Bonus",
-          "value": "113.8%"
-        },
-        {
           "name": "Declension Duration",
-          "value": "60s"
+          "value": "6s"
         },
         {
           "name": "CD",
@@ -91,11 +83,7 @@
       "upgrades": [
         {
           "name": "Fudou Style Vacuum Slugger DMG",
-          "value": "314.7%"
-        },
-        {
-          "name": "Windmuster Iris DMG",
-          "value": "52.6%"
+          "value": "367.3%"
         },
         {
           "name": "CD",

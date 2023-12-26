@@ -7,14 +7,6 @@ module.exports.selectAllEnemies = (callback) => {
   pool.query(sqlstatement, callback);
 };
 
-module.exports.selectCombatLogByStatus = (data, callback) => {
-  const sqlstatement = `
-    SELECT * FROM combatlog WHERE combat_id = ? AND combat_status = ?;
-  `;
-  const VALUES = [data.combat_id, data.combat_status];
-  pool.query(sqlstatement, VALUES, callback);
-};
-
 module.exports.selectCombatById = (user_id, callback) => {
   const sqlstatement = `
     SELECT * FROM combat WHERE user_id = ?;
@@ -30,10 +22,18 @@ module.exports.insertCombat = (data, callback) => {
   pool.query(sqlstatement, VALUES, callback);
 };
 
-module.exports.InsertCombatLog = (data, callback) => {
+module.exports.updateCombat = (data, callback) => {
   const sqlstatement = `
-    INSERT INTO combatlog (combat_id, user_character_id, user_character_health, entity_health, elemental_interaction, combat_status) VALUES (?, ?, ?, ?, ?, ?);
+    UPDATE combat SET end_time = CURRENT_TIMESTAMP, outcome = ? WHERE combat_id = ?;
+  `;
+  const VALUES = [data.outcome, data.combat_id];
+  pool.query(sqlstatement, VALUES, callback);
+};
+
+module.exports.selectCombatByEntityId = (data, callback) => {
+  const sqlstatement = `
+    SELECT * FROM combat WHERE entity_id = ? AND outcome = ? AND user_id = ?;
     `;
-  const VALUES = [data.combat_id, data.user_character_id, data.user_character_health, data.entity_health, data.elemental_interaction, data.combat_status];
+  const VALUES = [data.entity_id, data.outcome, data.user_id];
   pool.query(sqlstatement, VALUES, callback);
 };

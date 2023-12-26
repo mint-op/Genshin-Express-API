@@ -4,6 +4,12 @@ var party = [];
 
 module.exports = { party: party };
 
+/** For Debugging
+module.exports = {
+  party: ...
+};
+*/
+
 // Creates a party for a user
 module.exports.createParty = async (userId) => {
   // Fetch necessary data from DB

@@ -66,16 +66,12 @@
       "description": "Hunts his prey using the techniques taught to him by his master and his Lupical.\nPress\nSwings the Thunder Wolf Claw, dealing Electro DMG to enemies in front of Razor.\n\nUpon striking an enemy, Razor will gain an Electro Sigil, which increases his Energy Recharge rate.\n\nRazor can have up to 3 Electro Sigils simultaneously, and gaining a new Electro Sigil refreshes their duration.\nHold\nGathers Electro energy to unleash a lightning storm over a small AoE, causing massive Electro DMG, and clears all of Razor's Electro Sigils.\n\nEach Electro Sigil cleared in this manner will be converted into Energy for Razor.",
       "upgrades": [
         {
-          "name": "Press Skill DMG",
-          "value": "199%"
-        },
-        {
           "name": "Hold Skill DMG",
           "value": "295%"
         },
         {
           "name": "Energy Recharge Bonus",
-          "value": "20% per electro sigil"
+          "value": "20%"
         },
         {
           "name": "Energy Regenerated",
@@ -84,10 +80,6 @@
         {
           "name": "Electro Sigil Duration",
           "value": "18s"
-        },
-        {
-          "name": "Press CD",
-          "value": "6s"
         },
         {
           "name": "CD (hold)",
@@ -104,14 +96,6 @@
         {
           "name": "Elemental Burst DMG",
           "value": "125%"
-        },
-        {
-          "name": "Soul Companion DMG",
-          "value": "20% normal attack dmg"
-        },
-        {
-          "name": "Normal ATK SPD Bonus",
-          "value": "20%"
         },
         {
           "name": "Electro RES Bonus",
