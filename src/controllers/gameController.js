@@ -1,4 +1,5 @@
 const model = require('../models/PlayerModel');
+const taskPmodel = require('../models/taskPModel');
 
 module.exports.gachaSingle = async (req, res, next) => {
   const { userId } = require('./loginController');
@@ -649,6 +650,17 @@ module.exports.attackEntity = async (req, res, next) => {
 
     const results = await (await require('../utils/combat').combat(userData[0].user_id)).action(partyIdx);
 
-    res.status(200).json(results);
+    if (results == 'victory') {
+      const callback = (errors, results, fields) => {
+        if (errors) console.error(errors);
+      };
+
+      // Update primogems
+      model.updatePrimogems({ primogems: userData[0].primogems + 20, user_id: userData[0].user_id }, callback);
+      // Update Eco Points
+      taskPmodel.insertSingle({ user_id: userData[0].user_id, task_id: 6, completion_date: new Date(), notes: 'Planted a tree' }, callback);
+    }
+
+    res.status(200).json({ game: results, primogems: `${userData[0].primogems + 20} (+20)` });
   }
 };
