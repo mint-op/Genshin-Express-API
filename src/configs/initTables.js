@@ -32,7 +32,7 @@ INSERT INTO task (title, description, points) VALUES
 ("Reduce Plastic Usage", "Commit to using reusable bags and containers.", 40),
 ("Energy Conservation", "Turn off lights and appliances when not in use.", 25),
 ("Composting", "Start composting kitchen scraps to create natural fertilizer.", 35),
-("Sustainable Game", "Win a game to plant a tree", 60);
+("Sustainable Game", "Win a game to support developments for sustainability", 60);
 
 DROP TABLE IF EXISTS userData;
 DROP TABLE IF EXISTS characters;

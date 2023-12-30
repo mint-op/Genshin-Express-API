@@ -1,17 +1,18 @@
 const fs = require('fs');
-const mysql = require('mysql2');
+// const mysql = require('mysql2');
 const path = require('path');
 require('dotenv').config();
+const pool = require('../services/db');
 
-const pool = mysql.createPool({
-  connectionLimit: 10, // Set limit to 10 connections
-  host: process.env.DB_HOST, // Get host from environment variable
-  user: process.env.DB_USER, // Get user from environment variable
-  password: process.env.DB_PASSWORD, // Get password from environment variable
-  database: process.env.DB_DATABASE, // Get database from environment variable
-  multipleStatements: true, // Allow multiple SQL statements
-  dateStrings: true, // Return date as string instead of Date object
-});
+// const pool = mysql.createPool({
+//   connectionLimit: 10, // Set limit to 10 connections
+//   host: process.env.DB_HOST, // Get host from environment variable
+//   user: process.env.DB_USER, // Get user from environment variable
+//   password: process.env.DB_PASSWORD, // Get password from environment variable
+//   database: process.env.DB_DATABASE, // Get database from environment variable
+//   multipleStatements: true, // Allow multiple SQL statements
+//   dateStrings: true, // Return date as string instead of Date object
+// });
 
 const insertSingleCharacter = (data, callback) => {
   // Define the SQL statement with placeholders for insertion
@@ -159,7 +160,7 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
      */
     const insertWeapon = async (data) => {
       // Format weapon data and call insertData.
-      const atk = await require('./queryDist')
+      const atk = await require('./readJSON')
         .readJSON('weapon-values.json')
         .filter((f) => f.Rarity[0] == data.rarity)
         .find((f) => Math.round(f.Value) == data.baseAttack); // * filter by rarity
@@ -221,7 +222,7 @@ const readDirectoryRecursiveWithFilter = async (baseDir, prefix) => {
  */
 const readFile = async (prefix) => {
   // Read the JSON data from the file with the given prefix.
-  const questData = await require('./queryDist').readJSON(prefix);
+  const questData = await require('./readJSON').readJSON(prefix);
 
   /**
    * Inserts data into the database using a provided insert function.
