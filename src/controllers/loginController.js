@@ -1,7 +1,7 @@
 const { selectAll } = require('../models/userModel');
 const { selectUserById, insertNewUser } = require('../models/PlayerModel');
 const { selectAllCharacters, selectAllWeapons } = require('../models/PlayerModel');
-const { readJSON } = require('../assets/queryDist');
+const { readJSON } = require('../assets/readJSON');
 const pool = require('../services/db');
 
 // Create a new player with the given ID.
@@ -50,7 +50,11 @@ const newPlayer = async (id) => {
       if (character.length == 0) console.log('Character not found');
       else {
         const charData = readJSON('character-values.json').find((f) => f.Character == charMap.name);
-        pool.query(sqlstatements.insertChar, [id, character[0].character_id, result.insertId, parseFloat(charData.HP), parseFloat(charData.ATK), parseFloat(charData.DEF)], callback);
+        pool.query(
+          sqlstatements.insertChar,
+          [id, character[0].character_id, result.insertId, parseFloat(charData.HP), parseFloat(charData.ATK), parseFloat(charData.DEF)],
+          callback
+        );
         console.log('UserCharacter added');
       }
     })

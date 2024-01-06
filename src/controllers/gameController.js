@@ -115,7 +115,7 @@ module.exports.insertGachaResult = (req, res, next) => {
   const { userData, results } = res.locals.result;
 
   // Import required module
-  const { readJSON } = require('../assets/queryDist');
+  const { readJSON } = require('../assets/readJSON');
 
   // Prepare the character object with user_id
   var charObj = {
@@ -650,17 +650,29 @@ module.exports.attackEntity = async (req, res, next) => {
 
     const results = await (await require('../utils/combat').combat(userData[0].user_id)).action(partyIdx);
 
-    if (results == 'victory') {
+    var output = { game: results };
+
+    if (results.message == 'victory') {
       const callback = (errors, results, fields) => {
         if (errors) console.error(errors);
       };
 
+      output = { ...output, primogems: `${userData[0].primogems + 20} (+20)` };
+
       // Update primogems
       model.updatePrimogems({ primogems: userData[0].primogems + 20, user_id: userData[0].user_id }, callback);
       // Update Eco Points
-      taskPmodel.insertSingle({ user_id: userData[0].user_id, task_id: 6, completion_date: new Date(), notes: 'Planted a tree' }, callback);
+      taskPmodel.insertSingle(
+        {
+          user_id: userData[0].user_id,
+          task_id: 6,
+          completion_date: `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`,
+          notes: 'Planted a tree',
+        },
+        callback
+      );
     }
 
-    res.status(200).json({ game: results, primogems: `${userData[0].primogems + 20} (+20)` });
+    res.status(200).json(output);
   }
 };

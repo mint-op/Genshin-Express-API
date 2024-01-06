@@ -22,7 +22,7 @@ module.exports.upgradeItemById = async (userId) => {
     const character = characters.find((f) => f.character_id == uchar.character_id);
 
     // Load the character level multiplier data
-    const multiplier = require('../assets/queryDist').readJSON('character-level-multiplier.json');
+    const multiplier = require('../assets/readJSON').readJSON('character-level-multiplier.json');
 
     // Calculate the new attributes for the upgraded character
     const temp = {
@@ -62,7 +62,7 @@ module.exports.upgradeItemById = async (userId) => {
     const weapon = weapons.find((f) => f.weapon_id == uweap.weapon_id);
 
     // Read the weapon values from the JSON file based on the weapon rarity and base attack
-    const type = require('../assets/queryDist')
+    const type = require('../assets/readJSON')
       .readJSON('weapon-values.json')
       .filter((f) => f.Rarity[0] == weapon.rarity)
       .find((f) => parseFloat(f.Value) == weapon.baseAttack);
@@ -72,15 +72,15 @@ module.exports.upgradeItemById = async (userId) => {
     // Determine the multiplier based on the weapon rarity
     switch (weapon.rarity) {
       case 5:
-        multiplier = require('../assets/queryDist').readJSON('weapon-5-multiplier.json');
+        multiplier = require('../assets/readJSON').readJSON('weapon-5-multiplier.json');
         break;
       case 4:
-        multiplier = require('../assets/queryDist').readJSON('weapon-4-multiplier.json');
+        multiplier = require('../assets/readJSON').readJSON('weapon-4-multiplier.json');
         break;
       case 3:
       case 2:
       case 1:
-        multiplier = require('../assets/queryDist').readJSON('weapon-1-3-multiplier.json');
+        multiplier = require('../assets/readJSON').readJSON('weapon-1-3-multiplier.json');
         break;
       default:
         break;

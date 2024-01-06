@@ -14,7 +14,7 @@
         "title": "Defeat the Abyss Mages",
         "description": "Abyss Mages are powerful elemental foes that can shield themselves and summon minions. Break their shields and strike them down. Defeat 5 Abyss Mages of any element.",
         "objective": [
-            5,
+            2,
             "abyss-mage"
         ],
         "experience_reward": 200,

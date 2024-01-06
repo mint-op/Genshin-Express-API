@@ -5,7 +5,7 @@ const controller = require('../controllers/userController');
 router.post('/', controller.createNewUsers);
 
 router.get('/', controller.readAllUsers);
-router.get('/:id', controller.readUserById);
+router.get('/:id', controller.getUserPoints, controller.readUserById);
 
 router.put('/:id', controller.updateUserById);
 

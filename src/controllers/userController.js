@@ -40,6 +40,25 @@ module.exports.readAllUsers = (req, res, next) => {
   model.selectAll(callback);
 };
 
+module.exports.getUserPoints = (req, res, next) => {
+  const { id } = req.params;
+
+  const callback = (errors, results, fields) => {
+    if (errors) console.error('Error getUserPoints', errors);
+    else {
+      if (results[0].points == null) {
+        res.locals.points = 0;
+      } else {
+        res.locals.points = parseInt(results[0].points);
+      }
+
+      next();
+    }
+  };
+
+  model.getUserPoints(id, callback);
+};
+
 module.exports.readUserById = (req, res) => {
   const { id } = req.params;
 
@@ -50,7 +69,7 @@ module.exports.readUserById = (req, res) => {
         // Mysql returns an empty array
         res.status(404).json({ message: 'User not found' });
       } else {
-        res.status(200).json(results[0]);
+        res.status(200).json({ ...results[0], points: res.locals.points });
       }
     }
   };

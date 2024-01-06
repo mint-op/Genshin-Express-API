@@ -18,8 +18,8 @@ module.exports.combat = async (userId) => {
     const selected = enemies[idx - 1];
 
     // Read enemy HP and ATK values from JSON files
-    const HP_VALUES = require('../assets/queryDist').readJSON('enemy-hp-values.json');
-    const ATK_VALUES = require('../assets/queryDist').readJSON('enemy-atk-values.json');
+    const HP_VALUES = require('../assets/readJSON').readJSON('enemy-hp-values.json');
+    const ATK_VALUES = require('../assets/readJSON').readJSON('enemy-atk-values.json');
 
     // Return error message if the index is invalid
     if (!selected) return { message: 'Invalid index' };
@@ -110,7 +110,7 @@ module.exports.combat = async (userId) => {
 
     // Retrieve party data
     const { party } = require('./party');
-    const { readJSON } = require('../assets/queryDist');
+    const { readJSON } = require('../assets/readJSON');
 
     // Check if entity ID is selected and if there are characters in the party
     if (combatData.entity_id == undefined) return { message: 'Please select an entity' };
@@ -252,7 +252,7 @@ async function attack(partyIdx, combatId, userId) {
       combat_id: combatId,
       outcome: 'victory',
     });
-    const msg = { message: 'victory' };
+    var msg = { message: 'victory' };
 
     // Check quest completion
     const completed = await checkQuestCompletion(combatData['entity_id'], userId);
@@ -313,7 +313,7 @@ async function checkQuestCompletion(entity_id, userId) {
     // If the number of completed quests matches the objective, update the user quest and return the quest data.
     if (qData.objective[0] == pending.length) {
       await updateUserQuest({
-        progress: 'complete',
+        progress: 'completed',
         user_quest_id: qData.uquest_id,
       });
       return qData;

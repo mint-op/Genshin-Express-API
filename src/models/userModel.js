@@ -17,8 +17,14 @@ module.exports.selectAll = (callback) => {
 
 module.exports.selectById = (id, callback) => {
   const sqlstatement = `
-    SELECT user.user_id, user.username, user.email, task.points FROM
-    taskprogress
+   SELECT * FROM user WHERE user_id = ?;
+  `;
+  pool.query(sqlstatement, id, callback);
+};
+
+module.exports.getUserPoints = (id, callback) => {
+  const sqlstatement = `
+    SELECT SUM(task.points) as points FROM taskprogress
     INNER JOIN user ON taskprogress.user_id = user.user_id
     INNER JOIN task ON taskprogress.task_id = task.task_id WHERE user.user_id = ?;
     `;
